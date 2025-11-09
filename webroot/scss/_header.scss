@@ -1,0 +1,72 @@
+.bg-light {
+  --bs-navbar-padding-y: 0.2rem;
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .nav-link {
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+    &.active {
+      color: $primary;
+      position: relative;
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $primary;
+        content: '';
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 900;
+  // margin-right: 0;
+  img {
+    height: 45px;
+    width: auto;
+    // max-height: 40px;
+    max-width: 200px;
+    @include minWidth(640px) {
+      max-width: auto;
+    }
+  }
+}
+
+.navbar > .container-xl {
+  @include minWidth(992px) {
+    justify-content: center;
+  }
+}
+.nav {
+  @include maxWidth(575px) {
+    margin-top: 0.7rem;
+  }
+  flex-wrap: nowrap;
+  .nav-link {
+    font-weight: 700;
+    font-size: 1.1rem;
+    @include maxWidth(575px) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 4vw;
+    }
+  }
+}
+@include maxWidth(991px) {
+  .mob_none {
+    display: none;
+  }
+}

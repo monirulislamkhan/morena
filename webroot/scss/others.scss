@@ -1,0 +1,322 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+@import 'variables';
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/variables-dark';
+
+// 5. Include remainder of required parts
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/root';
+
+// 6. Include any other optional stylesheet partials as desired; list below is not inclusive of all available stylesheets
+
+@import 'mixin';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/tables';
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/transitions';
+// @import '../node_modules/bootstrap/scss/dropdown';
+// @import '../node_modules/bootstrap/scss/button-group';
+@import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/navbar';
+// @import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/accordion';
+// @import '../node_modules/bootstrap/scss/breadcrumb';
+// @import '../node_modules/bootstrap/scss/pagination';
+// @import '../node_modules/bootstrap/scss/badge';
+// @import '../node_modules/bootstrap/scss/alert';
+// @import '../node_modules/bootstrap/scss/progress';
+// @import '../node_modules/bootstrap/scss/list-group';
+@import '../node_modules/bootstrap/scss/close';
+@import '../node_modules/bootstrap/scss/toasts';
+@import '../node_modules/bootstrap/scss/modal';
+@import '../node_modules/bootstrap/scss/tooltip';
+@import '../node_modules/bootstrap/scss/popover';
+@import '../node_modules/bootstrap/scss/carousel';
+@import '../node_modules/bootstrap/scss/spinners';
+@import '../node_modules/bootstrap/scss/offcanvas';
+@import '../node_modules/bootstrap/scss/placeholders';
+@import '../node_modules/bootstrap/scss/helpers';
+// ...
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import '../node_modules/bootstrap/scss/utilities/api';
+
+@import 'header';
+
+main {
+  margin-top: 3.2rem;
+  @include responsive(min640) {
+    margin-top: 3.7rem;
+  }
+}
+
+.about {
+  padding-bottom: 2rem;
+  @include minWidth(992px) {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  &__img {
+    position: relative;
+  }
+  .founded {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $white;
+    font-family: 1rem;
+    @include minWidth(768px) {
+      font-size: 1.2rem;
+    }
+    line-height: 1.2;
+    text-align: center;
+    padding: 1rem;
+    span {
+      font-weight: var(--font-bold);
+      display: block;
+      font-size: 3rem;
+      @include minWidth(768px) {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+.sub-heading {
+  @extend %sub-heading-border;
+}
+.sub {
+  color: $gray-700;
+}
+
+.we-do {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include minWidth(992px) {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba($primary, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    svg {
+      font-size: 3rem;
+    }
+    .h5 {
+      margin-top: 1rem;
+      font-weight: var(--font-bold);
+    }
+  }
+}
+
+.story {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include minWidth(992px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  // border: red solid 1px;
+  // background-color: darken($secondary, 10);
+
+  .sub-info {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+    @include minWidth(992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__item {
+    background-color: rgba($secondary, 0.6);
+    padding: 1.5rem;
+    border-radius: 0.9rem;
+  }
+}
+
+.team {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  @include minWidth(992px) {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  img {
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+  figure {
+    margin-bottom: 2rem;
+    figcaption {
+      padding-top: 0.6rem;
+      text-align: left;
+    }
+  }
+}
+
+.cta {
+  padding-bottom: 2rem;
+  @include minWidth(992px) {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  // background-color: darken($secondary, 20);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  &__area {
+    background-color: $secondary;
+    border: 2px double rgba($primary, 0.2);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    @include minWidth(768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    gap: 2rem;
+    min-height: 30vh;
+  }
+  &__info {
+    flex: 1 1 60%;
+    text-align: left;
+  }
+  &__btn {
+    flex: 1 1 40%;
+    display: flex;
+    @include minWidth(768px) {
+      justify-content: center;
+    }
+  }
+}
+
+.thank {
+  @extend .comSec;
+  &__inner {
+    // border: red solid 1px;
+    svg {
+      font-size: 8vw;
+      color: $primary;
+      @include maxWidth(575px) {
+        font-size: 30vw;
+      }
+    }
+    .h1 {
+      font-size: 5vw;
+      color: $primary;
+      text-transform: uppercase;
+      @include maxWidth(575px) {
+        font-size: 8vw;
+      }
+    }
+  }
+}
+
+.con {
+  @extend .comSec;
+  &_left {
+    border: solid 1px rgba($primary, 0.3);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    ul {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba($primary, 0.2);
+      li {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 0;
+        &:not(:last-child) {
+          border-bottom: 1px dotted rgba($primary, 0.2);
+        }
+        label {
+          display: block;
+          font-size: 0.8rem;
+          color: $gray-600;
+        }
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+  &_right {
+    background-color: $white;
+    padding: 1.5rem;
+    box-shadow: 0 24px 48px -12px rgba($black, 0.19);
+    border: 1px solid rgba($secondary, 0.1);
+    border-radius: 0.5rem;
+    .h4 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    margin-bottom: 2rem;
+  }
+}
+
+.comSec {
+  text-align: center;
+  padding: 3rem 0 3rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  p {
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.error {
+  padding-bottom: 2rem;
+  position: relative;
+  &__building {
+    position: relative;
+  }
+  &__404 {
+    position: relative;
+    margin-top: -11rem;
+    @include maxWidth(575px) {
+      margin-top: -3rem;
+    }
+  }
+}
+
+// 8. Add additional custom code here
+@import '../node_modules/swiper/swiper';
+@import '../node_modules/swiper/modules/navigation';
+
+@import 'common';
+@import 'footer';

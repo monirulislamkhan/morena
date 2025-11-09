@@ -1,0 +1,43 @@
+.more-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  @include maxWidth(1024px) {
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+  }
+}
+
+.more-custom {
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  color: $link-color;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid $link-color;
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.2s ease-in;
+  left: 0;
+  text-transform: uppercase;
+  svg {
+    transition: all 0.2s ease-in;
+    margin-left: 1rem;
+    position: relative;
+  }
+  &:hover {
+    color: $link-color;
+    left: 1rem;
+    svg {
+      margin-left: 3rem;
+    }
+  }
+  @include maxWidth(991px) {
+    font-size: 0.9rem;
+  }
+}

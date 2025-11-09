@@ -1,0 +1,283 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  // font-family: var(--font-serif);
+  font-family: var(--font-sans-serif);
+  font-weight: 300;
+  @include responsive(min768) {
+    font-size: 1.1rem;
+  }
+}
+ol,
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+strong {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+h1 {
+  // word-spacing: -1rem;
+  letter-spacing: -0.1rem;
+  @include responsive(min768) {
+    // font-size: 3.815rem;
+    // @extend %heading;
+    @include font-size($h1-font-size + 0.5);
+  }
+}
+
+h2,
+.h2 {
+  // letter-spacing: -0.1rem;
+  @include responsive(min768) {
+    // font-size: 3.052rem;
+    @include font-size($h1-font-size);
+  }
+}
+
+h3,
+.h3 {
+  @include responsive(min768) {
+    // font-size: 2.441rem;
+    @include font-size($h1-font-size);
+  }
+}
+
+h4,
+.h4 {
+  @include responsive(min768) {
+    font-size: 1.953rem;
+  }
+}
+
+h5,
+.h5 {
+  @include responsive(min768) {
+    font-size: 1.563rem;
+  }
+}
+
+h6,
+.h6 {
+  @include responsive(min768) {
+    font-size: 1.25rem;
+  }
+}
+
+small {
+  font-size: 0.875rem;
+  font-family: var(--font-sans-serif);
+}
+
+.form-control,
+.form-select {
+  font-size: 0.875rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  color: $gray-700;
+}
+
+.form-control {
+  &::placeholder {
+    font-size: 0.875rem;
+    color: $gray-500;
+  }
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 1px $primary;
+    outline: none;
+  }
+}
+.form-select {
+  color: $gray-700;
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px $primary;
+    outline: none;
+  }
+}
+
+.btn-close {
+  border-radius: 100%;
+  &:hover {
+    background-color: $gray-400;
+  }
+}
+
+.modal {
+  backdrop-filter: blur(7px);
+}
+
+.modal {
+  /* .h5,
+  h5 {
+    font-size: 1.5rem;
+    color: darken($primary, 20%);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba($gray-600, 0.2);
+  } */
+  .modal-header {
+    border-bottom: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-between;
+    &__heading {
+      font-size: 1.6rem;
+    }
+    .btn-close {
+      margin-left: 0;
+    }
+  }
+  .modal-body {
+    padding: 0 2rem 1rem;
+  }
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(13px);
+  background-color: rgba($black, 0.9);
+}
+
+.invalid_name,
+.invalid_email,
+.invalid_phone {
+  display: none;
+  color: $red;
+}
+.fancybox-slide {
+  padding: 0 !important;
+}
+
+figure {
+  margin-bottom: 0;
+}
+
+.container-xl,
+.container-fluid,
+.ebr--main {
+  @include maxWidth(1199px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  @include maxWidth(767px) {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+
+.container-xl {
+  max-width: 1170px;
+}
+/* .btn {
+  position: relative;
+  transition: all 0.2s;
+  white-space: nowrap;
+  &:hover {
+    transform: translateY(-4px);
+  }
+  &:focus {
+    transform: translateY(-1px);
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+} */
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-color: var(--bs-white);
+}
+
+.deliver {
+  margin-top: 1.7rem;
+  text-align: center;
+  color: $gray-700;
+  &__heading {
+    position: relative;
+    border-bottom: 1px solid rgba($gray-400, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $white;
+      padding: 0 0.4rem;
+      display: block;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    li {
+      font-size: 0.75rem;
+      line-height: 1;
+      flex-grow: 1;
+      &:not(:last-child) {
+        border-right: 1px solid rgba($gray-400, 0.8);
+      }
+      svg {
+        display: block;
+        margin: 0 auto 0.3rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  small {
+    font-size: 0.8rem;
+    line-height: 0.8;
+  }
+}
+
+// iti country css
+.iti {
+  font-size: 0.9rem;
+  color: $body-color;
+  width: 100%;
+  &__search-input {
+    // box-shadow: 0 0 0 1px $primary;
+    outline: 2px $primary solid;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+.whatsappColor {
+  color: var(--whatsapp-color);
+}
+.phoneColor {
+  color: var(--phone-color);
+  &.mobile {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    align-self: center;
+    @include minWidth(992px) {
+      display: none;
+    }
+  }
+}
