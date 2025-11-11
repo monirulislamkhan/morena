@@ -6,7 +6,7 @@ include("include/var.inc.php");
 
 <head>
   <? include('common-part.php') ?>
-  <title>Morena Real Estates</title>
+  <title>Microsite Real Estates</title>
   <meta name="description" content="" />
   <link rel="canonical" href="http://localhost/dynamiclayout/" />
   <link href="<?= WEBROOT ?>css/blog.css" rel="stylesheet" />
@@ -20,7 +20,7 @@ include("include/var.inc.php");
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="http://localhost/dynamiclayout/"><img src="http://localhost/dynamiclayout/img/logo.svg" width="250" height="45"
-          alt="Morena"></a>
+          alt="Microsite"></a>
       <a class="phoneColor mobile" target="_blank" href="tel:" rel="nofollow"><i
           class="fa-solid fa-square-phone"></i></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
