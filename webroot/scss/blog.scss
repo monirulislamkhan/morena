@@ -120,18 +120,13 @@ main {
 }
 
 .blog-card {
-  display: block;
+  display: flex;
+  gap: 1.5rem;
   text-decoration: none;
   color: inherit;
-
+  border: red solid 1px;
+  background-color: $primary;
   .blog-inner {
-    display: flex;
-    gap: 1.5rem;
-    background: #ffe4e4;
-    padding: 2rem;
-    border-radius: 1rem;
-    transition: all 0.25s ease;
-    height: 100%;
   }
 
   &:hover .blog-inner {

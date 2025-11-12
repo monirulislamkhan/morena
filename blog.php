@@ -80,40 +80,23 @@ include("include/var.inc.php");
 
     <!-- Card 1 -->
     <div class="col-lg-6">
-      <a href="#" class="blog-card">
+      <div class="blog-card">
+        <div class="blog-img">
+          <img src="images/car1.jpg" alt="blog">
+        </div>
         <div class="blog-inner">
 
-          <div class="blog-img">
-            <img src="images/car1.jpg" alt="blog">
-          </div>
 
           <div class="blog-content">
             <a href="category" class="blog-category">CARS</a>
             <span class="blog-date">June 12, 2024</span>
-            <h3 class="blog-title">Moving through: the everyday urban jungle of your city</h3>
+            <h3 class="blog-title h5">Moving through: the everyday urban jungle of your city</h3>
           </div>
 
         </div>
-      </a>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col-lg-6">
-      <a href="#" class="blog-card">
-        <div class="blog-inner">
-
-          <div class="blog-img">
-            <img src="images/car2.jpg" alt="blog">
-          </div>
-
-          <div class="blog-content">
-            <a href="category" class="blog-category">CARS</a>
-            <span class="blog-date">February 20, 2023</span>
-            <h3 class="blog-title">Is Britain’s likely next leader a great brain?</h3>
-          </div>
-
-        </div>
-      </a>
+        
+        
+      </div>
     </div>
 
   </div>
