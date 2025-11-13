@@ -75,33 +75,75 @@ include("include/var.inc.php");
 
     <!-- Editor Picks -->
     <section class="editor-picks container-xl my-5">
-      <div class="h3">Editor Picks</div>
-  <div class="row">
+      <div class="h4">Editor Picks</div>
+      <div class="row">
 
-    <!-- Card 1 -->
-    <div class="col-lg-6">
-      <div class="blog-card">
-        <div class="blog-img">
-          <img src="images/car1.jpg" alt="blog">
-        </div>
-        <div class="blog-inner">
-
-
-          <div class="blog-content">
-            <a href="category" class="blog-category">CARS</a>
-            <span class="blog-date">June 12, 2024</span>
-            <h3 class="blog-title h5">Moving through: the everyday urban jungle of your city</h3>
+        <!-- Card 1 -->
+        <div class="col-lg-6">
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="<?= IMG ?>blog/image-01.jpg" class="img-fluid" alt="blog">
+            </div>
+            <div class="blog-content">
+              <div>
+                <a href="category" class="blog-category">CARS</a>
+                <span class="blog-date">June 12, 2024</span>
+              </div>
+              <h3 class="h6">
+                <a href="" class="stretched-link">
+                  Moving through: the everyday urban jungle of your city
+                </a>
+              </h3>
+            </div>
           </div>
-
         </div>
-        
-        
+        <div class="col-lg-6">
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="<?= IMG ?>blog/image-01.jpg" class="img-fluid" alt="blog">
+            </div>
+            <div class="blog-content">
+              <div>
+                <a href="category" class="blog-category">CARS</a>
+                <span class="blog-date">June 12, 2024</span>
+              </div>
+              <h3 class="h6">
+                <a href="" class="stretched-link">
+                  Moving through: the everyday urban jungle of your city
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-
+    <section class="container-xl">
+      <div class="h4">Recent Posts</div>
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="blog-list">
+            <div class="blo">
+              <div class="blog-img">
+                <img src="<?= IMG ?>blog/image-01.jpg" class="img-fluid" alt="blog">
+              </div>
+              <div class="blog-content">
+                <div>
+                  <a href="category" class="blog-category">CARS</a>
+                  <span class="blog-date">June 12, 2024</span>
+                </div>
+                <h3 class="h6">
+                  <a href="" class="stretched-link">
+                    Moving through: the everyday urban jungle of your city
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1">Right</div>
+      </div>
+    </section>
 
 
 
