@@ -37,6 +37,22 @@
   }
 }
 
+@mixin blogCategory($bgColor: $white, $textColor: $primary) {
+  background: $bgColor;
+  position: relative;
+  z-index: 2;
+  padding: 0.25rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $textColor;
+  text-decoration: none;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
 /* @mixin btnShadow($themeValue) {
   box-shadow: 0 0.4rem 0.1rem 0.1rem rgba(var(--bs-primary-rgb), 0.7);
 } */

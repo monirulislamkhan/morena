@@ -162,7 +162,9 @@ main {
 }
 
 .blog-category {
-  background: $white;
+  @include blogCategory;
+
+  /* background: $white;
   position: relative;
   z-index: 2;
   padding: 0.25rem 0.8rem;
@@ -174,7 +176,7 @@ main {
   &:hover {
     background-color: $primary;
     color: $white;
-  }
+  } */
 }
 
 .blog-date {
@@ -202,6 +204,44 @@ main {
     max-width: 100%;
     flex: 1 1 auto;
   }
+}
+
+.recent-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.blog {
+  // border: red solid 1px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+
+  &-item {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+  }
+  &-img {
+    border-radius: 1rem;
+    img {
+      border-radius: inherit;
+    }
+  }
+  &-content {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+    .blog-category {
+      @include blogCategory(rgba($primary, 0.2));
+    }
+  }
+}
+
+.blog-right {
+  border: red solid 1px;
 }
 
 // 8. Add additional custom code here
