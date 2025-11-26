@@ -262,10 +262,9 @@ main {
 // Single Blog page
 .post-section {
   .post-left {
-    ul,
-    ol {
+    ul {
       list-style: inherit;
-      padding-left: initial;
+      padding-left: 2rem;
     }
     blockquote {
       background-color: rgba($secondary, 0.2);
@@ -274,7 +273,7 @@ main {
       position: relative;
       padding-left: 5rem;
       border-left: 3px solid $primary;
-      margin-bottom: 4.5rem;
+      margin-bottom: 1.5rem;
       display: block;
       &::before {
         position: absolute;
@@ -283,7 +282,7 @@ main {
         left: 1.5rem;
         top: 50%;
         transform: translateY(-50%);
-        content: '\1020';
+        content: '\0022';
         font-size: 5rem;
       }
       p {

@@ -72,12 +72,59 @@ include("include/var.inc.php");
                 </li>
               </ul>
 
-              <h2>The power of Blog Editors</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, suscipit. Itaque voluptatibus non nisi sapiente quisquam architecto harum voluptas sint.</p>
+              <h2>The Power of Blogger Editor</h2>
+              <p>Donec facilisis leo et bibendum pretium. Suspendisse ligula neque, ultrices nec interdum faucibus, pharetra et libero.&nbsp;Vestibulum viverra molestie nunc.&nbsp;<strike>Lorem ipsum dolor sit amet, consectetur adipiscing elit</strike>. Donec eros turpis, dictum vel vehicula viverra, facilisis in mauris. Nullam rhoncus enim ligula, sit amet suscipit turpis dignissim non. Phasellus deserunt. Convallis perspiciatis fusce fermentum accumsan, arcu aliquam, velit venenatis augue proin, enim etiam dolor.</p>
               <blockquote>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor nulla eveniet quos optio quia vero consequuntur, at quam dolore.</p>
               </blockquote>
+              <p><i><u>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</u> Donec facilisis leo et bibendum pretium. Suspendisse ligula neque, ultrices nec interdum faucibus, pharetra et libero. Vestibulum viverra molestie nunc. Sed quis aliquet leo. In vel posuere tortor. Donec eros turpis, dictum vel vehicula viverra, facilisis in mauris. Praesent id aliquam eros, in semper est.</i></p>
 
+              <p><b><span style="color: #444444;">Aenean pellentesque magna ut nibh lobortis, sit amet vulputate sem tristique.</span></b> Ut ac ultrices lectus, id volutpat nisi. Aenean ipsum augue, mollis at sodales mollis, varius eu erat. Fusce accumsan rhoncus risus non feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendum pretium. Suspendisse ligula neque, ultrices nec interdum faucibus, pharetra et libero. Vestibulum viverra molestie nunc. <span style="background-color: #b5838d; color: white;">Sed quis aliquet leo. In vel posuere tortor.</span> Donec eros turpis, dictum vel vehicula viverra, facilisis in mauris. Nullam rhoncus enim ligula, sit amet suscipit turpis dignissim non.</p>
+
+              <img src="<?= IMG ?>blog/blog-inner.jpg" class="img-fluid" alt="blog main banner">
+
+              <p>Proin consequat purus sit amet blandit sollicitudin. Aliquam in consequat libero. Morbi sollicitudin dignissim erat laoreet interdum. Phasellus magna velit, consectetur iaculis tincidunt placerat, semper non sem. Mauris in eleifend libero. Mauris vitae nibh sed felis aliquet dictum sed egestas mauris. Sed varius est ac nulla eleifend sagittis. Praesent id aliquam eros, in semper est. Maecenas ex enim, ornare ac auctor sit amet, interdum et justo. Aenean pellentesque magna ut nibh lobortis, sit amet vulputate sem tristique. Ut ac ultrices lectus, id volutpat nisi. Aenean ipsum augue, mollis at sodales mollis, varius eu erat.</p>
+            </div>
+
+            <!-- Next and Previous blog -->
+            <div class="post-pager row">
+              <div class="previous col-md-6 text-left">
+                <a class="fbt-newer-link" href="" rel="previous"><strong class="text-left"><i class="fa fa-angle-left mr-1"></i> Older</strong>
+                  <div class="h6"><span class="entry-link">Go For Western Economy With These Pioneering</span></div>
+                </a>
+              </div>
+              <div class="next col-md-6 text-right">
+                <a class="fbt-older-link" href="" rel="next"><strong class="text-right" data-trans="Next">Newer <i class="fa fa-angle-right ml-1"></i></strong>
+                  <div class="h6 text-right"><span class="entry-link">Why is Child Development So Important in the Early Years</span></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="h4">You may like these posts</div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="-item">
+                      <div class="blog-img">
+                        <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
+                      </div>
+                      <div class="blog-content">
+                        <div>
+                          <a href="category" class="blog-category">CARS</a>
+                          <span class="blog-date">June 12, 2024</span>
+                        </div>
+                        <h3 class="h6">
+                          <a href="blog-single.php" class="stretched-link">
+                            Moving through: the everyday
+                          </a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus..</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
