@@ -34,7 +34,7 @@
 @import '../node_modules/bootstrap/scss/navbar';
 // @import '../node_modules/bootstrap/scss/card';
 @import '../node_modules/bootstrap/scss/accordion';
-// @import '../node_modules/bootstrap/scss/breadcrumb';
+@import '../node_modules/bootstrap/scss/breadcrumb';
 // @import '../node_modules/bootstrap/scss/pagination';
 // @import '../node_modules/bootstrap/scss/badge';
 // @import '../node_modules/bootstrap/scss/alert';
@@ -60,7 +60,7 @@
 main {
   margin-top: 3.2rem;
   @include responsive(min640) {
-    margin-top: 3.2rem;
+    margin-top: 4.7rem;
   }
 }
 
@@ -241,7 +241,82 @@ main {
 }
 
 .blog-right {
-  border: red solid 1px;
+  // border: red solid 1px;
+  .news {
+    display: grid;
+    gap: 1.5rem;
+    &-item {
+      position: relative;
+      display: flex;
+
+      gap: 1rem;
+
+      img {
+        width: 100px;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+// Single Blog page
+.post-section {
+  .post-left {
+    ul,
+    ol {
+      list-style: inherit;
+      padding-left: initial;
+    }
+    blockquote {
+      background-color: rgba($secondary, 0.2);
+      padding: 1.5rem;
+      font-weight: 600;
+      position: relative;
+      padding-left: 5rem;
+      border-left: 3px solid $primary;
+      margin-bottom: 4.5rem;
+      display: block;
+      &::before {
+        position: absolute;
+        height: 100%;
+        width: 100px;
+        left: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '\1020';
+        font-size: 5rem;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.banner-content {
+  display: block;
+  position: relative;
+  // overflow: hidden;
+  height: 500px;
+  margin-bottom: 1.5rem;
+  .banner {
+    overflow-y: hidden;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    // width: 100%;
+    // height: 100%;
+    // left: -200px;
+  }
+  img {
+    display: block;
+    max-width: initial;
+    // height: 100%;
+    // min-height: 100%;
+    object-fit: cover;
+    // width: initial;
+  }
 }
 
 // 8. Add additional custom code here

@@ -32,203 +32,54 @@ include("include/var.inc.php");
       </div>
     </div>
   </nav>
-  <main>
-
-
-    <section class="banner">
-      <img src="<?= IMG ?>blog/home.jpg" class="img-fluid banner__img" alt="alt required">
-      <div class="banner__content">
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="banner__text">
-                <h1>New Study Reveals Surprising Benefits of Meditation on Brain Health</h1>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis leo et bibendum pretium. Suspendisse ligula neque, ultri...</p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="">
-            <div class="banner__post">
-              <div class="post">
-                <img src="<?= IMG ?>blog/small-70.jpg" class="img-fluid" alt="alt required">
-                <a href="">Back to school - Captions and ideas for schools</a>
-              </div>
-              <div class="post">
-                <img src="<?= IMG ?>blog/small-70.jpg" class="img-fluid" alt="alt required">
-                <a href="">Back to school - Captions and ideas for schools</a>
-              </div>
-              <div class="post">
-                <img src="<?= IMG ?>blog/small-70.jpg" class="img-fluid" alt="alt required">
-                <a href="">Back to school - Captions and ideas for schools</a>
-              </div>
-              <div class="post">
-                <img src="<?= IMG ?>blog/small-70.jpg" class="img-fluid" alt="alt required">
-                <a href="">Back to school - Captions and ideas for schools</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  <main class="">
     <!-- Editor Picks -->
-    <section class="editor-picks container-xl my-5">
-      <div class="h4">Editor Picks</div>
-      <div class="row">
-
-        <!-- Card 1 -->
-        <div class="col-lg-6">
-          <div class="blog-card">
-            <div class="blog-img">
-              <img src="<?= IMG ?>blog/image-01.jpg" class="img-fluid" alt="blog">
-            </div>
-            <div class="blog-content">
-              <div>
-                <a href="category" class="blog-category">CARS</a>
-                <span class="blog-date">June 12, 2024</span>
-              </div>
-              <h3 class="h6">
-                <a href="blog-single.php" class="stretched-link">
-                  Moving through: the everyday urban jungle of your city
-                </a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="blog-card">
-            <div class="blog-img">
-              <img src="<?= IMG ?>blog/image-01.jpg" class="img-fluid" alt="blog">
-            </div>
-            <div class="blog-content">
-              <div>
-                <a href="category" class="blog-category">CARS</a>
-                <span class="blog-date">June 12, 2024</span>
-              </div>
-              <h3 class="h6">
-                <a href="blog-single.php" class="stretched-link">
-                  Moving through: the everyday urban jungle of your city
-                </a>
-              </h3>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="recent-section">
+    <section class="post-section">
       <div class="container-xl">
-        <div class="h4">Recent Posts</div>
         <div class="row">
           <div class="col-lg-7">
-            <div class="blog">
-              <div class="blog-item">
-                <div class="blog-img">
-                  <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
-                </div>
-                <div class="blog-content">
-                  <div>
-                    <a href="category" class="blog-category">CARS</a>
-                    <span class="blog-date">June 12, 2024</span>
-                  </div>
-                  <h3 class="h6">
-                    <a href="blog-single.php" class="stretched-link">
-                      Moving through: the everyday
-                    </a>
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus..</p>
-                </div>
-              </div>
-              <div class="blog-item">
-                <div class="blog-img">
-                  <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
-                </div>
-                <div class="blog-content">
-                  <div>
-                    <a href="category" class="blog-category">CARS</a>
-                    <span class="blog-date">June 12, 2024</span>
-                  </div>
-                  <h3 class="h6">
-                    <a href="blog-single.php" class="stretched-link">
-                      Moving through: the everyday
-                    </a>
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus..</p>
-                </div>
-              </div>
-              <div class="blog-item">
-                <div class="blog-img">
-                  <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
-                </div>
-                <div class="blog-content">
-                  <div>
-                    <a href="category" class="blog-category">CARS</a>
-                    <span class="blog-date">June 12, 2024</span>
-                  </div>
-                  <h3 class="h6">
-                    <a href="blog-single.php" class="stretched-link">
-                      Moving through: the everyday
-                    </a>
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus..</p>
-                </div>
-              </div>
+            <div class="post-left">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+              </nav>
+              <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officiis.</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut ducimus atque dolorum suscipit est.</p>
+              <div class="author">
 
-              <div class="blog-item">
-                <div class="blog-img">
-                  <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
-                </div>
-                <div class="blog-content">
-                  <div>
-                    <a href="category" class="blog-category">CARS</a>
-                    <span class="blog-date">June 12, 2024</span>
-                  </div>
-                  <h3 class="h6">
-                    <a href="blog-single.php" class="stretched-link">
-                      Moving through: the everyday
-                    </a>
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus..</p>
-                </div>
               </div>
-              <div class="blog-item">
-                <div class="blog-img">
-                  <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
+              <figrure class="banner-content">
+                <div class="banner">
+                  <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog main banner">
                 </div>
-                <div class="blog-content">
-                  <div>
-                    <a href="category" class="blog-category">CARS</a>
-                    <span class="blog-date">June 12, 2024</span>
-                  </div>
-                  <h3 class="h6">
-                    <a href="blog-single.php" class="stretched-link">
-                      Moving through: the everyday
-                    </a>
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus..</p>
-                </div>
-              </div>
-              <div class="blog-item">
-                <div class="blog-img">
-                  <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
-                </div>
-                <div class="blog-content">
-                  <div>
-                    <a href="category" class="blog-category">CARS</a>
-                    <span class="blog-date">June 12, 2024</span>
-                  </div>
-                  <h3 class="h6">
-                    <a href="blog-single.php" class="stretched-link">
-                      Moving through: the everyday
-                    </a>
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus..</p>
-                </div>
-              </div>
+              </figrure>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, beatae modi quos, at quisquam pariatur voluptate vitae aliquid amet provident repellendus rerum culpa. Molestiae culpa optio maxime aut maiores, quas <a href="">eveniet quidem voluptate</a> tempore sunt dolorum, quaerat facilis iure accusantium laboriosam quam alias? Est repellat, ratione quidem nesciunt numquam eius sit cum dolor doloremque eum iure quisquam fugiat placeat in perspiciatis accusantium rem atque porro consequuntur! Tenetur asperiores nostrum...</p>
+
+              <ul>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cumque?</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cumque?</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, cumque?
+                  <ol>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                  </ol>
+                </li>
+              </ul>
+
+              <h2>The power of Blog Editors</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, suscipit. Itaque voluptatibus non nisi sapiente quisquam architecto harum voluptas sint.</p>
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor nulla eveniet quos optio quia vero consequuntur, at quam dolore.</p>
+              </blockquote>
+
             </div>
+
           </div>
           <div class="col-lg-4 offset-lg-1">
             <div class="blog-right">
@@ -241,68 +92,68 @@ include("include/var.inc.php");
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                   <div class="news-content">
                     <h3 class="h6">
-                      <a href="blog-single.phpblog-single.php" class="stretched-link">
+                      <a href="blog-single.php" class="stretched-link">
                         Moving through: the everyday
                       </a>
                     </h3>
 
                     <span class="blog-date">June 12, 2025</span>
-                    
+
                   </div>
                 </div>
                 <div class="news-item">
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                   <div class="news-content">
                     <h3 class="h6">
-                      <a href="blog-single.phpblog-single.php" class="stretched-link">
+                      <a href="blog-single.php" class="stretched-link">
                         Moving through: the everyday
                       </a>
                     </h3>
 
                     <span class="blog-date">June 12, 2025</span>
-                    
+
                   </div>
                 </div>
                 <div class="news-item">
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                   <div class="news-content">
                     <h3 class="h6">
-                      <a href="blog-single.phpblog-single.php" class="stretched-link">
+                      <a href="blog-single.php" class="stretched-link">
                         Moving through: the everyday
                       </a>
                     </h3>
 
                     <span class="blog-date">June 12, 2025</span>
-                    
+
                   </div>
                 </div>
                 <div class="news-item">
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                   <div class="news-content">
                     <h3 class="h6">
-                      <a href="blog-single.phpblog-single.php" class="stretched-link">
+                      <a href="blog-single.php" class="stretched-link">
                         Moving through: the everyday
                       </a>
                     </h3>
 
                     <span class="blog-date">June 12, 2025</span>
-                    
+
                   </div>
                 </div>
                 <div class="news-item">
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                   <div class="news-content">
                     <h3 class="h6">
-                      <a href="blog-single.phpblog-single.php" class="stretched-link">
+                      <a href="blog-single.php" class="stretched-link">
                         Moving through: the everyday
                       </a>
                     </h3>
 
                     <span class="blog-date">June 12, 2025</span>
-                    
+
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>
