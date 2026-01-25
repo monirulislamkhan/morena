@@ -35,7 +35,7 @@
 // @import '../node_modules/bootstrap/scss/card';
 @import '../node_modules/bootstrap/scss/accordion';
 @import '../node_modules/bootstrap/scss/breadcrumb';
-// @import '../node_modules/bootstrap/scss/pagination';
+@import '../node_modules/bootstrap/scss/pagination';
 // @import '../node_modules/bootstrap/scss/badge';
 // @import '../node_modules/bootstrap/scss/alert';
 // @import '../node_modules/bootstrap/scss/progress';
@@ -56,11 +56,15 @@
 @import '../node_modules/bootstrap/scss/utilities/api';
 
 @import 'header';
-
 main {
   margin-top: 3.2rem;
   @include responsive(min640) {
     margin-top: 4.7rem;
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -106,6 +110,7 @@ main {
       padding: 0.5rem;
       border-radius: 0.8rem;
       backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
       a {
         font-size: 0.9rem;
         font-weight: var(--font-semibold);
@@ -146,7 +151,7 @@ main {
       height: auto;
       aspect-ratio: 4 / 3;
       object-fit: cover;
-      border-radius: 0.8rem;
+      border-radius: 0.4rem;
     }
   }
 
@@ -157,26 +162,11 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-    min-height: 100%;
   }
 }
 
 .blog-category {
   @include blogCategory;
-
-  /* background: $white;
-  position: relative;
-  z-index: 2;
-  padding: 0.25rem 0.8rem;
-  border-radius: 1rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: $primary;
-  text-decoration: none;
-  &:hover {
-    background-color: $primary;
-    color: $white;
-  } */
 }
 
 .blog-date {
@@ -223,7 +213,7 @@ main {
     gap: 2rem;
   }
   &-img {
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     img {
       border-radius: inherit;
     }
@@ -252,8 +242,8 @@ main {
       gap: 1rem;
 
       img {
-        width: 100px;
-        border-radius: 0.5rem;
+        width: 120px;
+        border-radius: 0.2rem;
       }
     }
   }
@@ -290,6 +280,218 @@ main {
       }
     }
   }
+}
+
+/* Single post - featured header layout */
+.featuredImageContainer {
+  padding: 2.5rem 0 1.5rem;
+  .fbt-breadcrumbs {
+    font-size: 0.95rem;
+    color: $gray-600;
+    margin-bottom: 1rem;
+  }
+
+  .fbt-item-caption {
+    h1.post-title {
+      font-weight: 900;
+      font-size: clamp(2.25rem, 5vw, 4.6rem);
+      line-height: 1.02;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .post-excerpt {
+      color: rgba(#000, 0.6);
+      max-width: 70%;
+      margin-bottom: 1rem;
+      font-size: 1.03rem;
+    }
+
+    .item-post-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+
+      .post-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .post-author {
+        img.author-avatar {
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        a {
+          color: inherit;
+        }
+      }
+
+      .read-time {
+        font-size: 0.95rem;
+        color: rgba(#000, 0.6);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .fbt-item-thumbnail-single {
+    margin-top: 1.4rem;
+    img.ft-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.75rem;
+      max-height: 540px;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Styles for new post-left layout (matches screenshot) */
+.post-left {
+  .fbt-breadcrumbs,
+  nav.breadcrumbs {
+    color: rgba(#000, 0.6);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-headline {
+    font-weight: 900;
+    font-size: clamp(2.6rem, 6.2vw, 4.8rem);
+    line-height: 1.02;
+    margin-bottom: 0.8rem;
+  }
+
+  .post-excerpt {
+    max-width: 70%;
+    color: rgba(#000, 0.6);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+
+  .meta-row {
+    align-items: center;
+    gap: 1rem;
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #f2f2f2; /* placeholder */
+    }
+    .author-name {
+      font-weight: 600;
+    }
+  }
+
+  .featured-media {
+    margin-top: 1.25rem;
+    .featured-img {
+      width: 100%;
+      height: auto;
+      max-height: 560px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+      display: block;
+    }
+  }
+
+  .article-body {
+    margin-top: 1.75rem;
+    p {
+      color: rgba(#000, 0.8);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    h2 {
+      margin-top: 1.25rem;
+      margin-bottom: 0.6rem;
+      font-weight: 700;
+    }
+    .blockquote {
+      border-left: 4px solid rgba($primary, 0.08);
+    }
+  }
+
+  @include responsive(max768) {
+    .post-excerpt {
+      max-width: 100%;
+    }
+    .post-headline {
+      font-size: clamp(1.6rem, 7vw, 2.6rem);
+    }
+  }
+}
+
+/* vertical social share column */
+.share-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  a,
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: #fff;
+    background: rgba($black, 0.06);
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+  }
+  a {
+    background: rgba($gray-300, 0.12);
+    color: rgba(#000, 0.7);
+  }
+  button {
+    background: rgba($gray-100, 0.14);
+    color: rgba(#000, 0.7);
+  }
+}
+
+/* blockquote large style */
+.post-left .featured-quote {
+  background: #f3f7fb;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.4rem 1.25rem;
+  .quote-mark {
+    font-size: 48px;
+    line-height: 1;
+    color: rgba(#000, 0.8);
+    font-weight: 700;
+  }
+  .quote-text {
+    font-weight: 700;
+    color: rgba(#000, 0.9);
+  }
+}
+
+/* center image caption style */
+.post-left .article-body img {
+  border-radius: 0.6rem;
+}
+
+/* Improve spacing for lists & meta */
+.post-left .article-body ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+.post-left .meta-row {
+  margin-bottom: 0.8rem;
 }
 
 .banner-content {
