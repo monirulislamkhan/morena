@@ -59,7 +59,7 @@
 
 main {
   margin-top: 3.2rem;
-  @include responsive(min640) {
+  @include responsive(min, sm) {
     margin-top: 3.7rem;
   }
 }
@@ -72,20 +72,20 @@ main {
     // align-items: flex-end;
     justify-content: flex-end;
     img {
-      @include minWidth(992px) {
+      @include responsive(min, lg) {
         min-height: 650px;
       }
     }
     .right {
       flex: 1 1 100%;
-      @include minWidth(992px) {
+      @include responsive(min, lg) {
         flex: 0 0 50%;
       }
     }
   }
   .banner-content {
     padding: 2rem 0;
-    @include minWidth(992px) {
+    @include responsive(min, lg) {
       position: absolute;
       top: 0;
       left: 0;
@@ -98,7 +98,7 @@ main {
     }
     h1,
     p {
-      @include minWidth(992px) {
+      @include responsive(min, lg) {
         padding-right: 2rem;
       }
     }
@@ -116,7 +116,7 @@ main {
         align-items: center;
         column-gap: 0.5rem;
         color: $secondary;
-        @include minWidth(576px) {
+        @include responsive(min,sm) {
           flex: 0 0 calc(50% - 1rem);
         }
       }
@@ -125,7 +125,7 @@ main {
     .top-projects {
       position: relative;
       padding-top: 0.2rem;
-      @include minWidth(992px) {
+      @include responsive(min, lg) {
         margin-right: -10rem;
       }
       @extend %next-prev-decoration;
@@ -175,7 +175,7 @@ main {
 
 .about-content {
   padding: 2rem 0;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 6rem 0;
   }
   h2 {

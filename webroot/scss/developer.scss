@@ -132,7 +132,7 @@ main {
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
     gap: 1rem;
-    @include minWidth(768px) {
+    @include responsive(min, md) {
       flex-direction: row;
     }
   }

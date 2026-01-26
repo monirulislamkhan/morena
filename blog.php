@@ -129,7 +129,7 @@ include("include/var.inc.php");
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                 </div>
                 <div class="blog-content">
-                  <div>
+                  <div class="mb-3">
                     <a href="category" class="blog-category">CARS</a>
                     <span class="blog-date">June 12, 2024</span>
                   </div>
@@ -146,7 +146,7 @@ include("include/var.inc.php");
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                 </div>
                 <div class="blog-content">
-                  <div>
+                  <div class="mb-3">
                     <a href="category" class="blog-category">CARS</a>
                     <span class="blog-date">June 12, 2024</span>
                   </div>
@@ -163,7 +163,7 @@ include("include/var.inc.php");
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                 </div>
                 <div class="blog-content">
-                  <div>
+                  <div class="mb-3">
                     <a href="category" class="blog-category">CARS</a>
                     <span class="blog-date">June 12, 2024</span>
                   </div>
@@ -181,7 +181,7 @@ include("include/var.inc.php");
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                 </div>
                 <div class="blog-content">
-                  <div>
+                  <div class="mb-3">
                     <a href="category" class="blog-category">CARS</a>
                     <span class="blog-date">June 12, 2024</span>
                   </div>
@@ -198,7 +198,7 @@ include("include/var.inc.php");
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                 </div>
                 <div class="blog-content">
-                  <div>
+                  <div class="mb-3">
                     <a href="category" class="blog-category">CARS</a>
                     <span class="blog-date">June 12, 2024</span>
                   </div>
@@ -215,7 +215,7 @@ include("include/var.inc.php");
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                 </div>
                 <div class="blog-content">
-                  <div>
+                  <div class="mb-3">
                     <a href="category" class="blog-category">CARS</a>
                     <span class="blog-date">June 12, 2024</span>
                   </div>
@@ -228,7 +228,7 @@ include("include/var.inc.php");
                 </div>
               </div>
             </div>
-            <nav>
+            <nav class="mt-4 pt-4 d-flex justify-content-center">
               <ul class="pagination">
                 <li class="page-item">
                   <a class="page-link" href="#" aria-label="Previous">

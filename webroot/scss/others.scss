@@ -59,14 +59,14 @@
 
 main {
   margin-top: 3.2rem;
-  @include responsive(min640) {
+  @include responsive(min, sm) {
     margin-top: 3.7rem;
   }
 }
 
 .about {
   padding-bottom: 2rem;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding-top: 4rem;
     padding-bottom: 2rem;
   }
@@ -79,7 +79,7 @@ main {
     right: 0;
     background-color: $white;
     font-family: 1rem;
-    @include minWidth(768px) {
+    @include responsive(min, md) {
       font-size: 1.2rem;
     }
     line-height: 1.2;
@@ -89,7 +89,7 @@ main {
       font-weight: var(--font-bold);
       display: block;
       font-size: 3rem;
-      @include minWidth(768px) {
+      @include responsive(min, md) {
         font-size: 4rem;
       }
     }
@@ -111,7 +111,7 @@ main {
 .we-do {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding-top: 4rem;
     padding-bottom: 6rem;
     text-align: center;
@@ -139,7 +139,7 @@ main {
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -150,7 +150,7 @@ main {
     margin-top: 2rem;
     display: grid;
     gap: 2rem;
-    @include minWidth(992px) {
+    @include responsive(min, lg) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -164,7 +164,7 @@ main {
 .team {
   padding-top: 2.5rem;
   padding-bottom: 2rem;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -183,7 +183,7 @@ main {
 
 .cta {
   padding-bottom: 2rem;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -198,7 +198,7 @@ main {
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    @include minWidth(768px) {
+    @include responsive(min, md) {
       flex-direction: row;
       align-items: center;
     }
@@ -213,7 +213,7 @@ main {
   &__btn {
     flex: 1 1 40%;
     display: flex;
-    @include minWidth(768px) {
+    @include responsive(min, md) {
       justify-content: center;
     }
   }
@@ -226,7 +226,7 @@ main {
     svg {
       font-size: 8vw;
       color: $primary;
-      @include maxWidth(575px) {
+      @include responsive(max, sm) {
         font-size: 30vw;
       }
     }
@@ -234,7 +234,7 @@ main {
       font-size: 5vw;
       color: $primary;
       text-transform: uppercase;
-      @include maxWidth(575px) {
+      @include responsive(max, sm) {
         font-size: 8vw;
       }
     }
@@ -308,7 +308,7 @@ main {
   &__404 {
     position: relative;
     margin-top: -11rem;
-    @include maxWidth(575px) {
+    @include responsive(max, sm) {
       margin-top: -3rem;
     }
   }

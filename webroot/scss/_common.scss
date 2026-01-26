@@ -10,7 +10,7 @@ body {
   // font-family: var(--font-serif);
   font-family: var(--font-sans-serif);
   font-weight: 300;
-  @include responsive(min768) {
+  @include responsive(min, md) {
     font-size: 1.1rem;
   }
 }
@@ -36,7 +36,7 @@ strong {
 h1 {
   // word-spacing: -1rem;
   letter-spacing: -0.1rem;
-  @include responsive(min768) {
+  @include responsive(min, md) {
     // font-size: 3.815rem;
     // @extend %heading;
     @include font-size($h1-font-size + 0.5);
@@ -46,7 +46,7 @@ h1 {
 h2,
 .h2 {
   // letter-spacing: -0.1rem;
-  @include responsive(min768) {
+  @include responsive(min, md) {
     // font-size: 3.052rem;
     @include font-size($h1-font-size);
   }
@@ -54,7 +54,7 @@ h2,
 
 h3,
 .h3 {
-  @include responsive(min768) {
+  @include responsive(min, md) {
     // font-size: 2.441rem;
     @include font-size($h1-font-size);
   }
@@ -62,21 +62,21 @@ h3,
 
 h4,
 .h4 {
-  @include responsive(min768) {
+  @include responsive(min, md) {
     font-size: 1.953rem;
   }
 }
 
 h5,
 .h5 {
-  @include responsive(min768) {
+  @include responsive(min, md) {
     font-size: 1.563rem;
   }
 }
 
 h6,
 .h6 {
-  @include responsive(min768) {
+  @include responsive(min, md) {
     font-size: 1.25rem;
   }
 }
@@ -172,11 +172,11 @@ figure {
 .container-xl,
 .container-fluid,
 .ebr--main {
-  @include maxWidth(1199px) {
+  @include responsive(max, xl) {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
-  @include maxWidth(767px) {
+  @include responsive(max, md) {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
   }
@@ -274,7 +274,7 @@ figure {
     font-size: 2.5rem;
     line-height: 1.1;
     align-self: center;
-    @include minWidth(992px) {
+    @include responsive(min, lg) {
       display: none;
     }
   }

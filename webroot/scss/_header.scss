@@ -39,33 +39,33 @@
     width: auto;
     // max-height: 40px;
     max-width: 200px;
-    @include minWidth(640px) {
+    @include responsive(min, sm) {
       max-width: auto;
     }
   }
 }
 
 .navbar > .container-xl {
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     justify-content: center;
   }
 }
 .nav {
-  @include maxWidth(575px) {
+  @include responsive(max, sm) {
     margin-top: 0.7rem;
   }
   flex-wrap: nowrap;
   .nav-link {
     font-weight: 700;
     font-size: 1.1rem;
-    @include maxWidth(575px) {
+    @include responsive(max, sm) {
       padding-left: 0.5rem;
       padding-right: 0.5rem;
       font-size: 4vw;
     }
   }
 }
-@include maxWidth(991px) {
+@include responsive(max, lg) {
   .mob_none {
     display: none;
   }

@@ -37,17 +37,17 @@ include("include/var.inc.php");
     <section class="post-section">
       <div class="container-xl">
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-lg-8">
             <div class="post-left">
-              <nav aria-label="breadcrumb">
+              <nav class="mt-3">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item"><a href="#">Library</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Data</li>
                 </ol>
               </nav>
-              <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officiis.</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut ducimus atque dolorum suscipit est.</p>
+              <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius pariatur hic perferendis nulla, aperiam similique sapiente, et molestiae voluptatibus nobis alias excepturi, dolores repellendus!</p>
               <div class="author">
 
               </div>
@@ -56,6 +56,10 @@ include("include/var.inc.php");
                   <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog main banner">
                 </div>
               </figrure>
+
+              <!-- <figrure class="banner-content">
+                <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog main banner">
+              </figrure> -->
 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, beatae modi quos, at quisquam pariatur voluptate vitae aliquid amet provident repellendus rerum culpa. Molestiae culpa optio maxime aut maiores, quas <a href="">eveniet quidem voluptate</a> tempore sunt dolorum, quaerat facilis iure accusantium laboriosam quam alias? Est repellat, ratione quidem nesciunt numquam eius sit cum dolor doloremque eum iure quisquam fugiat placeat in perspiciatis accusantium rem atque porro consequuntur! Tenetur asperiores nostrum...</p>
 
@@ -105,7 +109,7 @@ include("include/var.inc.php");
                 <div class="h4">You may like these posts</div>
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="-item">
+                    <div class="blog-item">
                       <div class="blog-img">
                         <img src="<?= IMG ?>blog/image-02.jpg" class="img-fluid" alt="blog">
                       </div>
@@ -128,7 +132,7 @@ include("include/var.inc.php");
             </div>
 
           </div>
-          <div class="col-lg-4 offset-lg-1">
+          <div class="col-lg-4">
             <div class="blog-right">
               <div class="follow">
 

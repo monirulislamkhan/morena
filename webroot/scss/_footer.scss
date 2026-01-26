@@ -20,10 +20,10 @@ footer {
     }
     ul {
       display: grid;
-      @include minWidth(640px) {
+      @include responsive(min, sm) {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
-      @include minWidth(768px) {
+      @include responsive(min, md) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       gap: 0 2.5rem;
@@ -40,7 +40,7 @@ footer {
       }
     }
     // color: $gray-500;
-    /*  @include minWidth(640px) {
+    /*  @include responsive(min, sm) {
       gap: 1rem;
       flex-direction: row;
       align-items: center;
@@ -51,7 +51,7 @@ footer {
       display: block;
       margin-top: 0.3rem;
       margin-bottom: 0.3rem;
-      /* @include minWidth(640px) {
+      /* @include responsive(min, sm) {
         padding-inline: 0.7rem;
         display: inline-block;
         &:not(:first-child) {
@@ -149,7 +149,7 @@ footer {
   left: 1.4rem;
   bottom: 3.5rem;
   z-index: 10;
-  @include maxWidth(991px) {
+  @include responsive(max, lg) {
     display: none !important;
   }
   a {

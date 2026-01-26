@@ -61,7 +61,7 @@
 
 main {
   margin-top: 3.2rem;
-  @include responsive(min640) {
+  @include responsive(min, sm) {
     margin-top: 3.7rem;
   }
 }
@@ -72,7 +72,7 @@ main {
     img {
       width: 100%;
       height: 290px;
-      @include minWidth(768px) {
+      @include responsive(min, md) {
         height: 90vh;
         min-height: 600px;
         max-height: 650px;
@@ -81,7 +81,7 @@ main {
   }
   .overlay {
     display: none;
-    @include responsive(min640) {
+    @include responsive(min, sm) {
       display: block;
       position: absolute;
       top: 0;
@@ -93,7 +93,7 @@ main {
   }
   .hero-content {
     padding: 1.5rem 1rem;
-    @include responsive(min640) {
+    @include responsive(min, sm) {
       text-align: center;
       margin-left: calc(-0.5 * var(--bs-gutter-x));
       margin-right: calc(-0.5 * var(--bs-gutter-x));
@@ -116,7 +116,7 @@ main {
     gap: 0.9rem;
     flex-wrap: wrap;
     // justify-content: center;
-    @include responsive(min640) {
+    @include responsive(min, sm) {
       justify-self: center;
       margin-bottom: 2rem;
       justify-content: center;
@@ -127,7 +127,7 @@ main {
       border: 1px solid rgba($primary, 0.3);
       border-radius: 0.3rem;
       font-size: 0.9rem;
-      @include responsive(min640) {
+      @include responsive(min, sm) {
         padding: 1rem;
         border: 1px solid rgba($white, 0.3);
         background-color: rgba($body-color, 0.7);
@@ -136,7 +136,7 @@ main {
     }
     &__item {
       font-size: 1.5rem;
-      @include responsive(min640) {
+      @include responsive(min, sm) {
         white-space: nowrap;
         color: $white;
         font-size: 1.2rem;
@@ -156,7 +156,7 @@ main {
 .highlight {
   position: relative;
   padding: 0.5rem 0 3rem;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 4rem 0 5rem;
   }
   &__text {
@@ -165,7 +165,7 @@ main {
     align-items: center;
     gap: 0.9rem;
     padding-bottom: 1.5rem;
-    @include responsive(min992) {
+    @include responsive(min, lg) {
       padding-bottom: 2.5rem;
     }
     h4 {
@@ -176,7 +176,7 @@ main {
   &__list {
     display: grid;
     gap: 1.5rem;
-    @include minWidth(768px) {
+    @include responsive(min, md) {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
@@ -224,7 +224,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @include minWidth(992px) {
+    @include responsive(min, lg) {
       padding-top: 0;
       min-height: 100%;
     }
@@ -258,14 +258,14 @@ main {
   position: relative;
   padding: 1rem 0 0;
 
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 3rem 0 0;
     text-align: center;
     padding: 7rem 0 0;
   }
 
   h2 {
-    @include minWidth(992px) {
+    @include responsive(min, lg) {
       margin-bottom: 2rem;
     }
   }
@@ -275,7 +275,7 @@ main {
     border-radius: 1.5rem 1.5rem 0 0;
     margin-left: -1.2rem;
     margin-right: -1.2rem;
-    @include responsive(min768) {
+    @include responsive(min, md) {
       margin-left: 0;
       margin-right: 0;
     }
@@ -287,7 +287,7 @@ main {
 
   p {
     text-align: justify;
-    @include minWidth(992px) {
+    @include responsive(min, lg) {
       font-size: 1.4rem;
       text-align: inherit;
     }
@@ -301,7 +301,7 @@ main {
     justify-content: flex-end;
     padding: 1rem 0 1.5rem;
 
-    @include responsive(min992) {
+    @include responsive(min, lg) {
       padding: 1rem 1rem 0.5rem;
       position: absolute;
       bottom: 0;
@@ -317,7 +317,7 @@ main {
       flex-wrap: wrap;
       gap: 1rem;
       margin-top: 1rem;
-      @include responsive(min768) {
+      @include responsive(min, md) {
         margin-top: 4rem;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -325,7 +325,7 @@ main {
       li {
         color: $primary;
         flex: 1 1 calc(50% - 0.5rem);
-        @include responsive(min768) {
+        @include responsive(min, md) {
           flex: 1 1 auto;
           &:not(:last-child) {
             border-right: 1px solid rgba($secondary-dark, 0.9);
@@ -335,7 +335,7 @@ main {
           font-family: var(--font-serif);
           font-weight: 600;
           display: block;
-          @include responsive(min768) {
+          @include responsive(min, md) {
             font-size: 1.6rem;
           }
           color: $primary-dark;
@@ -348,7 +348,7 @@ main {
 .amenities {
   padding: 0 0 2.5rem;
   @extend %smallTag;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 4rem 0;
     text-align: center;
   }
@@ -360,7 +360,7 @@ main {
     overflow-x: auto;
     gap: 0.9rem;
     padding-bottom: 0.5rem;
-    @include responsive(min640) {
+    @include responsive(min, sm) {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       overflow-x: inherit;
       grid-auto-flow: row;
@@ -376,14 +376,14 @@ main {
       padding: 0.5rem;
       font-size: var(--text-xs);
       white-space: nowrap;
-      @include responsive(min640) {
+      @include responsive(min, sm) {
         white-space: inherit;
         font-size: var(--text-sm);
       }
       border-radius: var(--rounded);
       svg {
         font-size: 1.5rem;
-        @include responsive(min640) {
+        @include responsive(min, sm) {
           font-size: 2.5rem;
         }
         color: $secondary-dark;
@@ -401,7 +401,7 @@ main {
   p {
     text-align: justify;
   }
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 5rem 0;
   }
 
@@ -442,7 +442,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    @include minWidth(640px) {
+    @include responsive(min, sm) {
       flex-direction: row;
     }
     position: relative;
@@ -457,7 +457,7 @@ main {
       // background-color: rgba($primary, 0.1);
       cursor: zoom-in;
       flex: 1 1 60%;
-      @include minWidth(640px) {
+      @include responsive(min, sm) {
         border-right: 1px solid rgba($primary, 0.3);
       }
     }
@@ -468,7 +468,7 @@ main {
       object-position: center;
       height: 200px;
       // padding: 0.9rem;
-      @include minWidth(640px) {
+      @include responsive(min, sm) {
         height: 250px;
       }
     }
@@ -481,7 +481,7 @@ main {
     justify-content: center;
     min-height: 100%;
     padding: 0 1rem 1.5rem;
-    @include minWidth(640px) {
+    @include responsive(min, sm) {
       padding: 2rem;
     }
   }
@@ -524,7 +524,7 @@ main {
 
 .gallery {
   padding: 2.5rem 0;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 5rem 0 0;
     text-align: center;
   }
@@ -536,7 +536,7 @@ main {
   display: grid;
   grid-template-columns: none;
   grid-template-rows: none;
-  @include responsive(min992) {
+  @include responsive(min, lg) {
     grid-template-columns: repeat(4, 1fr);
   }
   // grid-template-rows: auto;
@@ -547,7 +547,7 @@ main {
     object-position: center;
   }
   .img-slide {
-    @include responsive(min640) {
+    @include responsive(min, sm) {
       &:nth-of-type(1) {
         grid-column: 1 / span 1;
         grid-row: 1 / span 2;
@@ -574,7 +574,7 @@ main {
   // border-top: lighten($secondary, 10) solid 1px;
   // border-bottom: lighten($secondary, 10) solid 1px;
 
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 5rem 0 0;
     // text-align: center;
   }
@@ -586,7 +586,7 @@ main {
     flex-direction: column;
     justify-content: center;
     // min-height: 100%;
-    @include minWidth(992px) {
+    @include responsive(min, lg) {
       margin-top: -2rem;
       padding-right: 3rem;
       padding-left: 3rem;
@@ -601,7 +601,7 @@ main {
 
 .faq {
   padding: 2.5rem 0 1.5rem;
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 5rem 0;
   }
   background-color: $white;
@@ -683,7 +683,7 @@ main {
   p {
     text-align: justify;
   }
-  @include minWidth(992px) {
+  @include responsive(min, lg) {
     padding: 5rem 0;
   }
   .awards {
@@ -708,7 +708,7 @@ main {
   }
   &__bg {
     position: relative;
-    @include responsive(min992) {
+    @include responsive(min, lg) {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -727,7 +727,7 @@ main {
   .heading {
     text-align: center;
   }
-  @include responsive(min992) {
+  @include responsive(min, lg) {
     border-top: none;
     display: block;
     padding: 1rem 2rem;
