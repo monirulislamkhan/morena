@@ -8,7 +8,7 @@ include("include/var.inc.php");
   <? include('common-part.php') ?>
   <title>Microsite Real Estates</title>
   <meta name="description" content="" />
-  <link rel="canonical" href="http://localhost/dynamiclayout/" />
+  <link rel="canonical" href="http://localhost/morena/" />
   <link href="<?= WEBROOT ?>css/blog.css" rel="stylesheet" />
 </head>
 
@@ -19,15 +19,15 @@ include("include/var.inc.php");
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="http://localhost/dynamiclayout/"><img src="http://localhost/dynamiclayout/img/logo.svg" width="250" height="45"
+      <a class="navbar-brand" href="http://localhost/morena/"><img src="http://localhost/morena/img/logo.svg" width="250" height="45"
           alt="Microsite"></a>
       <a class="phoneColor mobile" target="_blank" href="tel:" rel="nofollow"><i
           class="fa-solid fa-square-phone"></i></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="http://localhost/dynamiclayout/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://localhost/dynamiclayout/about-us/">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://localhost/dynamiclayout/contact-us/">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://localhost/morena/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://localhost/morena/about-us/">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://localhost/morena/contact-us/">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -217,51 +217,51 @@ include("include/var.inc.php");
             <div class="h5">Top Projects</div>
             <ul>
               <li>
-                <a href="http://localhost/dynamiclayout/godrej-msr-city-bangalore/">Godrej MSR City <i
+                <a href="http://localhost/morena/godrej-msr-city-bangalore/">Godrej MSR City <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/unity-the-amaryllis-karol-bagh/">Unity The Amaryllis <i
+                <a href="http://localhost/morena/unity-the-amaryllis-karol-bagh/">Unity The Amaryllis <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/dlf-the-arbour-gurgaon/">DLF The Arbour <i
+                <a href="http://localhost/morena/dlf-the-arbour-gurgaon/">DLF The Arbour <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/emaar-urban-ascent-gurgaon/">Emaar Urban Ascent Gurgaon <i
+                <a href="http://localhost/morena/emaar-urban-ascent-gurgaon/">Emaar Urban Ascent Gurgaon <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/puri-the-aravallis-gurgaon/">Puri The Aravallis <i
+                <a href="http://localhost/morena/puri-the-aravallis-gurgaon/">Puri The Aravallis <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/silverglades-legacy-gurgaon/">Silverglades Legacy <i
+                <a href="http://localhost/morena/silverglades-legacy-gurgaon/">Silverglades Legacy <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/tarc-ishva-gurgaon/">Tarc Ishva <i
+                <a href="http://localhost/morena/tarc-ishva-gurgaon/">Tarc Ishva <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/adani-samsara-ivana-gurgaon/">Adani Samsara Ivana <i
+                <a href="http://localhost/morena/adani-samsara-ivana-gurgaon/">Adani Samsara Ivana <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/dlf-privana-gurgaon/">DLF Privana <i
+                <a href="http://localhost/morena/dlf-privana-gurgaon/">DLF Privana <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/birla-navya-avik-gurgaon/">Birla Navya Avik <i
+                <a href="http://localhost/morena/birla-navya-avik-gurgaon/">Birla Navya Avik <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/birla-arika-gurgaon/">Birla Arika <i
+                <a href="http://localhost/morena/birla-arika-gurgaon/">Birla Arika <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
               <li>
-                <a href="http://localhost/dynamiclayout/godrej-astra-gurgaon/">Godrej Astra <i
+                <a href="http://localhost/morena/godrej-astra-gurgaon/">Godrej Astra <i
                     class="fa-regular fa-arrow-right-long"></i></a>
               </li>
             </ul>
@@ -296,10 +296,10 @@ include("include/var.inc.php");
           </div>
           <div class="copyright">
             Copyright &copy; server1 2025 - <span id="currentYear"></span> | All Right Reserved | <a
-              href="http://localhost/dynamiclayout/">Home</a> | <a href="http://localhost/dynamiclayout/contact-us/">Contact us</a> | <a
-              href="http://localhost/dynamiclayout/about-us/">About us</a> | <a
-              href="http://localhost/dynamiclayout/disclaimer/">Disclaimer</a> | <a
-              href="http://localhost/dynamiclayout/privacy-policy/">Privacy Policy</a>
+              href="http://localhost/morena/">Home</a> | <a href="http://localhost/morena/contact-us/">Contact us</a> | <a
+              href="http://localhost/morena/about-us/">About us</a> | <a
+              href="http://localhost/morena/disclaimer/">Disclaimer</a> | <a
+              href="http://localhost/morena/privacy-policy/">Privacy Policy</a>
           </div>
         </div>
       </div>
@@ -365,10 +365,10 @@ include("include/var.inc.php");
     </div>
   </div>
   <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <link defer rel="stylesheet" href="http://localhost/dynamiclayout/css/intlTelInput.css">
-  <script src="http://localhost/dynamiclayout/js/lazyload.min.js"></script>
-  <script src="http://localhost/dynamiclayout/js/jquery.min.js"></script>
-  <script src="http://localhost/dynamiclayout/js/bootstrap.min.js"></script>
+  <link defer rel="stylesheet" href="http://localhost/morena/css/intlTelInput.css">
+  <script src="http://localhost/morena/js/lazyload.min.js"></script>
+  <script src="http://localhost/morena/js/jquery.min.js"></script>
+  <script src="http://localhost/morena/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -399,8 +399,8 @@ include("include/var.inc.php");
       $('.country').attr('readonly', true);
     });
   </script>
-  <script src="http://localhost/dynamiclayout/js/global.js"></script>
-  <script src="http://localhost/dynamiclayout/js/submitform.js"></script>
+  <script src="http://localhost/morena/js/global.js"></script>
+  <script src="http://localhost/morena/js/submitform.js"></script>
   <script>
     var lazyLoadInstance = new LazyLoad();
     lazyLoadInstance.update();
@@ -435,7 +435,7 @@ include("include/var.inc.php");
       }
     })
   </script>
-  <script src="http://localhost/dynamiclayout/js/swiper-bundle.min.js"></script>
+  <script src="http://localhost/morena/js/swiper-bundle.min.js"></script>
   <script>
     const benefitsSlider = new Swiper(".top-projects", {
       spaceBetween: 20,

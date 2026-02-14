@@ -28,7 +28,7 @@
 @import '../node_modules/bootstrap/scss/forms';
 @import '../node_modules/bootstrap/scss/buttons';
 @import '../node_modules/bootstrap/scss/transitions';
-// @import '../node_modules/bootstrap/scss/dropdown';
+@import '../node_modules/bootstrap/scss/dropdown';
 // @import '../node_modules/bootstrap/scss/button-group';
 @import '../node_modules/bootstrap/scss/nav';
 @import '../node_modules/bootstrap/scss/navbar';
@@ -170,6 +170,48 @@ main {
         }
       }
     }
+  }
+}
+
+.city-section {
+  padding-block: 2rem;
+  @include responsive(min, lg) {
+    padding-block: 4rem;
+  }
+  text-align: center;
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  .card-item {
+    // flex: 0 0 20%;
+    box-shadow: 0 6px 15px rgba($black, 0.1);
+    border-radius: 0.7rem;
+    transition: transform 0.3s;
+    position: relative;
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    img {
+      border-radius: 0.7rem 0.7rem 0 0;
+      height: 170px;
+      object-fit: cover;
+    }
+    h3 {
+      padding: 0.5rem;
+    }
+  }
+  .card-count {
+    position: absolute;
+    bottom: 3rem;
+    padding: 0.5rem;
+    background-color: $black;
+    color: $white;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.3rem;
   }
 }
 

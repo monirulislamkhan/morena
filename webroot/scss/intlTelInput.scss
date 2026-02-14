@@ -2,7 +2,12 @@
 
 :root {
   //* rgba is needed for the selected country hover state to blend in with the border-highlighting some browsers give the input on focus.
-  --iti-hover-color: rgba(0, 0, 0, 0.05); //* Used as the bg color for both the selected country and the dropdown items, on hover.
+  --iti-hover-color: rgba(
+    0,
+    0,
+    0,
+    0.05
+  ); //* Used as the bg color for both the selected country and the dropdown items, on hover.
   --iti-border-color: #ccc; //* Used for both the dropdown border, and the divider under the country search input.
   --iti-dialcode-color: #999;
   --iti-dropdown-bg: white;
@@ -20,10 +25,10 @@
   --iti-arrow-color: #555;
 
   //* Image related variables.
-  --iti-path-flags-1x: url('../img/flags.webp');
-  --iti-path-flags-2x: url('../img/flags@2x.webp');
-  --iti-path-globe-1x: url('../img/globe.webp');
-  --iti-path-globe-2x: url('../img/globe@2x.webp');
+  --iti-path-flags-1x: url('../images/flags.webp');
+  --iti-path-flags-2x: url('../images/flags@2x.webp');
+  --iti-path-globe-1x: url('../images/globe.webp');
+  --iti-path-globe-2x: url('../images/globe@2x.webp');
 
   --iti-flag-sprite-width: #{map-get($flags-sprite-1x, width)};
   --iti-flag-sprite-height: #{map-get($flags-sprite-1x, height)};
