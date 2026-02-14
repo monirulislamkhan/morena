@@ -443,7 +443,6 @@ include("include/var.inc.php");
 
             </a>
           </div>
-
         </div>
       </div>
       <div class="text-center mt-4">
@@ -453,7 +452,7 @@ include("include/var.inc.php");
 
     <section class="why-choose-us py-5 bg-light-subtle">
       <div class="container-xl">
-        <div class="text-center mb-5">
+        <div class="text-center">
           <h2 class="fw-bold section-title">Why Choose Us?</h2>
           <p class="text-muted">Your trusted partner in UAE’s most exclusive investments.</p>
         </div>
@@ -463,7 +462,7 @@ include("include/var.inc.php");
           <div class="col-md-4">
             <div class="card h-70 text-center p-4 border-0 shadow-sm bg-dark text-white rounded-3">
               <div class="mb-3">
-                <i class="bi bi-emoji-smile text-warning big-icon"></i>
+                <i class="fa-regular fa-face-smile-beam"></i>
               </div>
               <h5 class="fw-bold">Trusted By Thousands</h5>
               <p class="mb-0">
@@ -476,7 +475,7 @@ include("include/var.inc.php");
           <div class="col-md-4">
             <div class="card h-70 text-center p-4 border-0 shadow-sm bg-dark text-white rounded-3">
               <div class="mb-3">
-                <i class="bi bi-calculator text-warning big-icon"></i>
+                <i class="fa-solid fa-calculator"></i>
               </div>
               <h5 class="fw-bold">Financing Made Easy</h5>
               <p class="mb-0">
@@ -490,7 +489,7 @@ include("include/var.inc.php");
           <div class="col-md-4">
             <div class="card h-70 text-center p-4 border-0 shadow-sm bg-dark text-white rounded-3">
               <div class="mb-3">
-                <i class="bi bi-house text-warning big-icon"></i>
+                <i class="fa-regular fa-house"></i>
               </div>
               <h5 class="fw-bold">Wide Range Of Properties</h5>
               <p class="mb-0">
@@ -503,44 +502,94 @@ include("include/var.inc.php");
       </div>
     </section>
 
-    <section class="developer">
+    <section class="blog-section py-5">
       <div class="container-xl">
-        <div class="h2 mb-0">Our Developers</div>
-        <p class="sub">Top most developer.</p>
-        <div class="swiper developer__slides">
-          <div class="swiper-wrapper">
-            <figure class="swiper-slide"><a href=""><img src="http://localhost/morena/webroot/img/developer/dlf.svg" class="img-fluid"
-                  height="55" width="190" alt="DLF Limited"></a></figure>
-            <figure class="swiper-slide"><a href=""><img src="http://localhost/morena/webroot/img/developer/adani_realty.svg"
-                  class="img-fluid" height="55" width="190" alt="Adani Reality"></a></figure>
+        <h2 class="mb-4 fw-bold text-center section-title">Latest from Our Blog</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card blog-card h-100 shadow-sm">
+              <a href="https://topultraluxury.com/dubai-silicon-oasis-area-guide/">
+                <img width="768" height="432" src="https://topultraluxury.com/wp-content/uploads/dubai-silicone-oasis-banner-image-768x432.avif" class="card-img-top wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://topultraluxury.com/wp-content/uploads/dubai-silicone-oasis-banner-image-768x432.avif 768w, https://topultraluxury.com/wp-content/uploads/dubai-silicone-oasis-banner-image-700x394.avif 700w, https://topultraluxury.com/wp-content/uploads/dubai-silicone-oasis-banner-image-1024x576.avif 1024w, https://topultraluxury.com/wp-content/uploads/dubai-silicone-oasis-banner-image-1536x864.avif 1536w, https://topultraluxury.com/wp-content/uploads/dubai-silicone-oasis-banner-image.avif 1920w" sizes="(max-width: 768px) 100vw, 768px" /> </a>
 
-            <figure class="swiper-slide"><a href=""><img src="http://localhost/morena/webroot/img/developer/godrej-properties.png"
-                  class="img-fluid" height="55" width="190" alt="Godrej Properties"></a></figure>
-            <figure class="swiper-slide"><a href=""><img src="http://localhost/morena/webroot/img/developer/birla-estate-logo.webp"
-                  class="img-fluid" height="55" width="190" alt="Birla Estate"></a></figure>
-            <figure class="swiper-slide"><a href=""><img src="http://localhost/morena/webroot/img/developer/tarc.webp" class="img-fluid"
-                  height="55" width="190" alt="Tarc"></a></figure>
-            <figure class="swiper-slide"><a href=""><img src="http://localhost/morena/webroot/img/developer/TribecaLogo.svg"
-                  class="img-fluid" height="55" width="190" alt="Tribica"></a></figure>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-dark">Community Guide</span>
+                  <small class="text-muted">February 13, 2026</small>
+                </div>
+
+                <h5 class="card-title">
+                  <a href="https://topultraluxury.com/dubai-silicon-oasis-area-guide/" class="text-decoration-none text-dark">
+                    All you wanted to know about Silicon Oasis Dubai, United Arab Emirates! </a>
+                </h5>
+
+                <p class="card-text text-muted">
+                  Short for DSO, Dubai Silicon Oasis is a well-known master-planned smart community located in Dubai.... </p>
+              </div>
+
+              <div class="card-footer bg-white border-0">
+                <a href="https://topultraluxury.com/dubai-silicon-oasis-area-guide/" class="text-dark fw-bold">Read More →</a>
+              </div>
+            </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="col-md-4">
+            <div class="card blog-card h-100 shadow-sm">
+              <a href="https://topultraluxury.com/dubais-commercial-property-market/">
+                <img width="768" height="459" src="https://topultraluxury.com/wp-content/uploads/Piazza_Roma-768x459.avif" class="card-img-top wp-post-image" alt="" decoding="async" srcset="https://topultraluxury.com/wp-content/uploads/Piazza_Roma-768x459.avif 768w, https://topultraluxury.com/wp-content/uploads/Piazza_Roma-700x418.avif 700w, https://topultraluxury.com/wp-content/uploads/Piazza_Roma-1024x612.avif 1024w, https://topultraluxury.com/wp-content/uploads/Piazza_Roma.avif 1080w" sizes="(max-width: 768px) 100vw, 768px" /> </a>
+
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-dark">News</span>
+                  <small class="text-muted">February 10, 2026</small>
+                </div>
+
+                <h5 class="card-title">
+                  <a href="https://topultraluxury.com/dubais-commercial-property-market/" class="text-decoration-none text-dark">
+                    Dubai’s Commercial Property Market in 2025: What Drove the $37 Billion Record and Why It Matters </a>
+                </h5>
+
+                <p class="card-text text-muted">
+                  Dubai’s commercial property market closed 2025 at a historic high, reaching $37 billion in total... </p>
+              </div>
+
+              <div class="card-footer bg-white border-0">
+                <a href="https://topultraluxury.com/dubais-commercial-property-market/" class="text-dark fw-bold">Read More →</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card blog-card h-100 shadow-sm">
+              <a href="https://topultraluxury.com/where-to-invest-aed-3-million-in-dubai/">
+                <img width="768" height="768" src="https://topultraluxury.com/wp-content/uploads/6968c7d7a543c4ade1e49485_14-p-800-1-768x768.avif" class="card-img-top wp-post-image" alt="" decoding="async" srcset="https://topultraluxury.com/wp-content/uploads/6968c7d7a543c4ade1e49485_14-p-800-1-768x768.avif 768w, https://topultraluxury.com/wp-content/uploads/6968c7d7a543c4ade1e49485_14-p-800-1-500x500.avif 500w, https://topultraluxury.com/wp-content/uploads/6968c7d7a543c4ade1e49485_14-p-800-1.avif 800w" sizes="(max-width: 768px) 100vw, 768px" /> </a>
+
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-dark">Investment Guide</span>
+                  <small class="text-muted">February 10, 2026</small>
+                </div>
+
+                <h5 class="card-title">
+                  <a href="https://topultraluxury.com/where-to-invest-aed-3-million-in-dubai/" class="text-decoration-none text-dark">
+                    Where to Invest AED 3 Million in Dubai (2026) | Area-Wise Returns </a>
+                </h5>
+
+                <p class="card-text text-muted">
+                  The UAE property market has entered a phase where decisions need clarity. Prices have moved.... </p>
+              </div>
+
+              <div class="card-footer bg-white border-0">
+                <a href="https://topultraluxury.com/where-to-invest-aed-3-million-in-dubai/" class="text-dark fw-bold">Read More →</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mt-4">
-          <a href="http://localhost/morena/webroot/developers/">More Developers <i class="fa-regular fa-arrow-right-long"></i></a>
+
+        <div class="text-center mt-4">
+          <a href="/blog/" class="btn btn-outline-primary">
+            View All Blog Posts →
+          </a>
         </div>
       </div>
     </section>
-
-    <section class="about-content">
-      <div class="container-xl">
-        <h2>Heading 2 Lorem ipsum.</h2>
-        <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, in.</strong></p>
-        <p>Are you a homebuyer in India searching for your perfect abode? Or perhaps an investor seeking lucrative real estate opportunities? Finding the right property can be overwhelming. allcheckdealz.com is here to simplify your journey. We offer exclusive deals on properties from India's most trusted and top-rated developers. This means you gain access to a curated selection of high-quality homes and investment options that you might not find elsewhere.</p>
-        <p>For homebuyers, we provide a platform where you can discover your dream home with confidence, knowing you are choosing from the best developers in the country. For investors, allcheckdealz.com opens doors to potentially high-return investments in projects built by reputable names. We cut through the noise, presenting you with clear, concise information and straightforward deals. Say goodbye to complex jargon and endless searching. allcheckdealz.com focuses on making your property selection easy, efficient, and rewarding, connecting you directly with the finest developments India has to offer. Explore allcheckdealz.com today and take the first step towards your property goals.</p>
-      </div>
-    </section>
-
   </main>
   <? include('footer.php') ?>
   <script src="<?= WEBROOT ?>js/swiper-bundle.min.js"></script>

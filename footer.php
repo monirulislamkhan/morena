@@ -1,88 +1,71 @@
 <footer>
   <div class="container-xl">
     <div class="row">
-      <div class="col-md-8">
-        <div class="footer-projects">
-          <div class="h5">Top Projects</div>
-          <ul>
-            <li>
-              <a href="http://localhost/morena/godrej-msr-city-bangalore/">Godrej MSR City <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/unity-the-amaryllis-karol-bagh/">Unity The Amaryllis <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/dlf-the-arbour-gurgaon/">DLF The Arbour <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/emaar-urban-ascent-gurgaon/">Emaar Urban Ascent Gurgaon <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/puri-the-aravallis-gurgaon/">Puri The Aravallis <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/silverglades-legacy-gurgaon/">Silverglades Legacy <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/tarc-ishva-gurgaon/">Tarc Ishva <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/adani-samsara-ivana-gurgaon/">Adani Samsara Ivana <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/dlf-privana-gurgaon/">DLF Privana <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/birla-navya-avik-gurgaon/">Birla Navya Avik <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/birla-arika-gurgaon/">Birla Arika <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-            <li>
-              <a href="http://localhost/morena/project.php">Godrej Astra <i
-                  class="fa-regular fa-arrow-right-long"></i></a>
-            </li>
-          </ul>
+      <div class="col-12">
+        <h3 class="h4">Top Communities in Dubai</h3>
+        <div class="top-communities">
+          <a href="https://topultraluxury.com/communities/dubai/dubai-islands/">Dubai Islands</a><a href="https://topultraluxury.com/communities/dubai/dubailand/">DubaiLand</a><a href="https://topultraluxury.com/communities/unknown/dubai-investments-park/">Dubai Investments Park</a><a href="https://topultraluxury.com/communities/dubai/dubai-production-city/">Dubai Production City</a><a href="https://topultraluxury.com/communities/dubai/dubai-south/">Dubai South</a><a href="https://topultraluxury.com/communities/dubai/palm-jumeirah/">Palm Jumeirah</a><a href="https://topultraluxury.com/communities/dubai/jebel-ali/">Jebel Ali</a><a href="https://topultraluxury.com/communities/dubai/al-jaddaf/">Al Jaddaf</a><a href="https://topultraluxury.com/communities/dubai/jumeirah-village-circle/">Jumeirah Village Circle</a><a href="https://topultraluxury.com/communities/dubai/damac-riverside/">DAMAC Riverside</a><a href="https://topultraluxury.com/communities/dubai/the-valley/">The Valley</a><a href="https://topultraluxury.com/communities/dubai/mbr-city/">MBR City</a>
         </div>
+        <hr>
       </div>
-      <div class="col-md-3 offset-md-1">
-        <div class="footer-projects">
-          <div class="h5">Address</div>
-          <small>Shop No. 8, Local Shopping Complex, H-Block Market, Ashok Vihar, Phase-1, Delhi-110052</small>
-          <div class="h5 mt-4">Follow Us</div>
-          <div class="social">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
+      
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="terms">
-          This is only for information purposes and does not constitute any offer or contract. Customers are advised to
-          have their independent evaluation. Artistic impression as shown is a pictorial conceptualization and
-          indicative only and actual may differ. The sale is subject to the terms of Booking Application and Agreement
-          For Sale. All information, contents, plans, specifications are subject to change as may he decided by the
-          Promoter or directed by any competent authority subject to applicable laws and availability. All furniture,
-          fittings and specifications shown herein are for portraying a possible layout/interior for reference purposes
-          only and do not form part of the standard specifications/amenities/services to be provided in the unit/project
-          and is subject to changes. The provision of social infrastructure and other amenities will be as per approved
-          plans.
+        <h3 class="h4">Top Projects in Dubai</h3>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 top-projects">
+            <ul>
+            <li><a href="https://topultraluxury.com/new-projects/damac-trump-estate-2/">DAMAC Trump Estate 2</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">Samana Island</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">DAMAC Riverside Views Marine 3 by Damac</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">DAMAC Lagoons</a></li> 
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 top-projects">
+            <ul>
+            <li><a href="https://topultraluxury.com/new-projects/damac-trump-estate-2/">DAMAC Trump Estate 2</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">Samana Island</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">DAMAC Riverside Views Marine 3 by Damac</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">DAMAC Lagoons</a></li> 
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 top-projects">
+            <ul>
+            <li><a href="https://topultraluxury.com/new-projects/damac-trump-estate-2/">DAMAC Trump Estate 2</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">Samana Island</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">DAMAC Riverside Views Marine 3 by Damac</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">DAMAC Lagoons</a></li> 
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6 top-projects">
+            <ul>
+            <li><a href="https://topultraluxury.com/new-projects/damac-trump-estate-2/">DAMAC Trump Estate 2</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">Samana Island</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">DAMAC Riverside Views Marine 3 by Damac</a></li>
+            <li><a href="https://topultraluxury.com/new-projects/damac-lagoons/">DAMAC Lagoons</a></li> 
+            </ul>
+          </div>
         </div>
+      </div>
+      
+    </div>
+  </div>
+  <hr>
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="h4">Top Ultra Luxury</h2>
+        <p>One of the finest destinations of exclusive properties.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <dl>
+          <dt>Phone:<a href="tel:+971585792159">+971 58 579 2159</a></dt>
+          <dt>Email: <a href="mailto:topultraluxury@gmail.com">topultraluxury@gmail.com</a></dt>
+        </dl>
+      </div>
+    </div>
+    <div class="col-12">
         <div class="copyright">
           Copyright &copy; server1 2025 - <span id="currentYear"></span> | All Right Reserved | <a
             href="http://localhost/morena/">Home</a> | <a href="http://localhost/morena/contact-us/">Contact us</a> | <a
@@ -91,7 +74,6 @@
             href="http://localhost/morena/privacy-policy/">Privacy Policy</a>
         </div>
       </div>
-    </div>
   </div>
 </footer>
 <div class="aside_btn">
@@ -194,8 +176,7 @@
   var lazyLoadInstance = new LazyLoad();
   lazyLoadInstance.update();
 </script>
-<script src="https://kit.fontawesome.com/8a35e03744.js" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script>
   "use strict";
@@ -209,9 +190,9 @@
   const allLinks = document.querySelectorAll('.nav-link');
   const navbarCollapse = document.querySelector('.navbar-collapse');
 
-  $('.nav-link').click(function() {
+  /* $('.nav-link').click(function() {
     $('.navbar-collapse').collapse('hide');
-  });
+  }); */
 </script>
 <script>
   const asideBtn = document.querySelector('.aside_btn');
