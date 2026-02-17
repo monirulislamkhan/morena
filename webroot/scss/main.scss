@@ -60,445 +60,341 @@
 @import 'header';
 
 main {
-  margin-top: 3.2rem;
-  @include responsive(min, sm) {
-    margin-top: 3.7rem;
+  margin-top: 3.8rem;
+  p {
+    text-align: justify;
   }
 }
-.hero-section {
+
+.banner {
+  max-width: calc(var(--container-xl) - 1.5rem);
+  margin: 0 auto;
   position: relative;
-  .banner {
-    display: block;
+  display: grid;
+  @include responsive(min, md) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 0.5rem;
+  }
+  @include responsive(min, md) {
+    padding: 1rem 0 0.7rem;
+  }
+
+  &-1 {
+    position: relative;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
     img {
       width: 100%;
-      height: 290px;
       @include responsive(min, md) {
-        height: 90vh;
-        min-height: 600px;
-        max-height: 650px;
+        // height: 420px;
+        border-radius: 0.6rem 0 0 0.6rem;
+      }
+    }
+    // border: red solid 1px;
+  }
+
+  &-2 {
+    display: none;
+    &.item {
+      & img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    @include responsive(min, md) {
+      display: block;
+      &:nth-child(4) {
+        img {
+          border-top-right-radius: 0.6rem;
+        }
+      }
+      &:nth-child(6) {
+        img {
+          border-bottom-right-radius: 0.6rem;
+        }
       }
     }
   }
-  .overlay {
-    display: none;
-    @include responsive(min, sm) {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($black, 0.7);
+
+  &__info {
+    // border: red solid 1px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    column-gap: 0.9rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: var(--common-space);
+    padding-right: var(--common-space);
+    padding-top: var(--common-space);
+    z-index: 1;
+    padding-bottom: var(--common-space);
+    .btnRight {
+      display: flex;
+      column-gap: 0.8rem;
     }
-  }
-  .hero-content {
-    padding: 1.5rem 1rem;
-    @include responsive(min, sm) {
-      text-align: center;
-      margin-left: calc(-0.5 * var(--bs-gutter-x));
-      margin-right: calc(-0.5 * var(--bs-gutter-x));
-      width: 100%;
-      max-width: 950px;
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 1rem;
-      // background-color: rgba($white, 0.9);
-      border-radius: 1rem;
+    .counter,
+    .video {
+      border-radius: var(--border-theme);
+      display: flex;
+      gap: 0.3rem;
+      align-items: center;
+      height: 2.3rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .counter {
+      background-color: rgba($black, 0.5);
       color: $white;
+      border: 1px solid rgba($white, 0.3);
+    }
+    /*     .video {
+      background-color: $white;
+      color: var(--youtube-color);
+      font-size: 1.5rem;
+      position: relative;
+      z-index: 2;
+    } */
+  }
+}
+
+.main-content {
+  padding-top: 1.5rem;
+  @include responsive(min, lg) {
+    padding-top: 2rem;
+  }
+  &__header {
+    // border: red solid 1px;
+    display: flex;
+    flex-direction: column;
+    @include responsive(min, sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    .location {
+      color: $gray-700;
+      font-size: 0.9rem;
+    }
+
+    .price-wrapper {
+      border-top: 1px solid rgba($gray-500, 0.3);
+      padding-top: 0.5rem;
+      margin-top: 0.5rem;
+      @include responsive(min, sm) {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+      }
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+    .price {
+      font-size: 0.8rem;
+      color: $gray-600;
+      span {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $body-color;
+      }
+      // &:last-child {
+      //   text-align: right;
+      // }
     }
   }
   .lists {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 0.9rem;
-    flex-wrap: wrap;
-    // justify-content: center;
-    @include responsive(min, sm) {
-      justify-self: center;
-      margin-bottom: 2rem;
-      justify-content: center;
-      align-items: center;
-    }
-    li {
-      padding: 0.6rem;
-      border: 1px solid rgba($primary, 0.3);
-      border-radius: 0.3rem;
-      font-size: 0.9rem;
-      @include responsive(min, sm) {
-        padding: 1rem;
-        border: 1px solid rgba($white, 0.3);
-        background-color: rgba($body-color, 0.7);
-        color: $gray-400;
-      }
-    }
-    &__item {
-      font-size: 1.5rem;
-      @include responsive(min, sm) {
-        white-space: nowrap;
-        color: $white;
-        font-size: 1.2rem;
-      }
-    }
-
-    svg {
-      font-size: 1rem;
-    }
-  }
-}
-
-.sub-heading {
-  @extend %sub-heading-border;
-  color: $gray-600;
-}
-.highlight {
-  position: relative;
-  padding: 0.5rem 0 3rem;
-  @include responsive(min, lg) {
-    padding: 4rem 0 5rem;
-  }
-  &__text {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    align-items: center;
-    gap: 0.9rem;
-    padding-bottom: 1.5rem;
-    @include responsive(min, lg) {
-      padding-bottom: 2.5rem;
-    }
-    h4 {
-      flex: 1 1 200px;
-    }
-  }
-
-  &__list {
-    display: grid;
-    gap: 1.5rem;
-    @include responsive(min, md) {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-  }
-  &__item {
-    border-radius: 1rem;
-    background-color: $secondary-dark;
-    color: $white;
-    padding: 1.5rem;
-    span {
-      display: block;
-      font-size: 1.2rem;
-    }
-    &.item-1 {
-      background-color: $primary-dark;
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 2;
-    }
-    &.item-3 {
-      background-color: $primary;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    &.item-4 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: $black;
-    }
-    &.item-2,
-    &.item-5 {
-      padding: 0;
-    }
-  }
-  img {
-    height: 275px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: inherit;
-  }
-  &__description {
-    @extend %smallTag;
-    // padding-left: 1rem;
-    // padding-top: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba($gray-500, 0.3);
+    background-color: rgba($gray-400, 0.1);
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    @include responsive(min, lg) {
-      padding-top: 0;
-      min-height: 100%;
+    @include responsive(min, sm) {
+      flex-direction: row;
+    }
+    font-size: 0.8rem;
+    justify-content: space-between;
+    span {
+      display: block;
+      font-size: 1rem;
+      color: $body-color;
+      font-weight: var(--font-bold);
+    }
+    li {
+      padding: 1rem;
+      flex-grow: 1;
+      color: $gray-600;
+      &:not(:first-child) {
+        border-top: 1px solid rgba($gray-600, 0.2);
+        @include responsive(min, sm) {
+          border-top: none;
+          border-left: 1px solid rgba($gray-600, 0.2);
+        }
+        // padding-right: 0.5rem;
+        // margin-right: 0.5rem;
+      }
+      padding-left: 1.5rem;
+      svg {
+        float: left;
+        margin-left: -1.5rem;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        display: block;
+        padding-left: 1rem;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+  .offers {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(var(--bs-success-rgb), 0.1);
+    border: 1px solid rgba(var(--bs-success-rgb), 0.05);
+    border-radius: var(--border-theme);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    font-size: var(--font-smaller);
+    svg {
+      font-size: 2rem;
+      color: var(--bs-success);
+    }
+  }
+  .propertyInfo {
+    border-top: 1px solid rgba($body-color, 0.2);
+    padding-top: var(--common-space);
+    padding-bottom: var(--common-space);
+    @include responsive(min, sm) {
+      padding-top: var(--common-space);
+      // padding-bottom: var(--common-space-xl);
+    }
+    ul {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      @include responsive(min, sm) {
+        gap: 2rem 1rem;
+      }
+      li {
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba($body-color, 0.2);
+          @include responsive(min, sm) {
+            border-bottom: inherit;
+          }
+        }
+        @include responsive(min, sm) {
+          font-size: 0.85rem;
+          color: rgba($black, 0.6);
+          display: inherit;
+          padding-top: inherit;
+          padding-bottom: inherit;
+          border-bottom: none;
+        }
+        span {
+          display: block;
+          font-size: 1rem;
+          font-weight: var(--font-bold);
+          width: 150px;
+          color: $body-color;
+          @include responsive(min, sm) {
+            // font-weight: var(--font-bold);
+          }
+        }
+      }
     }
   }
   .highlights {
-    margin-bottom: 1rem;
+    list-style: none;
+    border-top: 1px solid rgba($body-color, 0.2);
+    padding-top: 1rem;
     li {
       // display: flex;
       padding-top: 1rem;
       padding-bottom: 1rem;
-      padding-left: 2.5rem;
+      font-size: var(--font-smaller);
+      padding-left: 3rem;
       svg {
         margin-top: 0.3rem;
         float: left;
-        margin-left: -2.5rem;
+        margin-left: -3rem;
         font-size: 1.5rem;
       }
       span {
         display: block;
         font-weight: var(--font-bold);
         font-size: 1rem;
-        // color: $body-color;
+        color: $body-color;
       }
     }
+  }
+}
+
+.prices,
+.amenities,
+.localities,
+.layout,
+.floor-plan {
+  small {
+    display: block;
+    font-size: var(--font-smaller);
+    color: $gray-600;
+    font-weight: normal;
   }
 }
 
 .description {
-  background-color: $secondary;
-  border-radius: 1.5rem 1.5rem 0 0;
-  position: relative;
-  padding: 1rem 0 0;
-
-  @include responsive(min, lg) {
-    padding: 3rem 0 0;
-    text-align: center;
-    padding: 7rem 0 0;
-  }
-
-  h2 {
-    @include responsive(min, lg) {
-      margin-bottom: 2rem;
-    }
-  }
-
-  &__img {
-    position: relative;
-    border-radius: 1.5rem 1.5rem 0 0;
-    margin-left: -1.2rem;
-    margin-right: -1.2rem;
-    @include responsive(min, md) {
-      margin-left: 0;
-      margin-right: 0;
-    }
-    img {
-      border-radius: inherit;
-      min-height: 300px;
-    }
-  }
-
-  p {
-    text-align: justify;
-    @include responsive(min, lg) {
-      font-size: 1.4rem;
-      text-align: inherit;
-    }
-  }
-  .propertyInfo {
-    background: $secondary;
-    background: linear-gradient(0deg, rgba($secondary, 1) 0%, rgba($secondary, 1) 50%, rgba($body-color, 0) 100%);
-    display: flex;
-    flex-direction: column;
-    // align-items: ;
-    justify-content: flex-end;
-    padding: 1rem 0 1.5rem;
-
-    @include responsive(min, lg) {
-      padding: 1rem 1rem 0.5rem;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      min-height: 100%;
-      padding-top: var(--common-space);
-      // padding-bottom: var(--common-space-xl);
-    }
-    ul {
-      flex-basis: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
-      @include responsive(min, md) {
-        margin-top: 4rem;
-        flex-direction: row;
-        flex-wrap: nowrap;
-      }
-      li {
-        color: $primary;
-        flex: 1 1 calc(50% - 0.5rem);
-        @include responsive(min, md) {
-          flex: 1 1 auto;
-          &:not(:last-child) {
-            border-right: 1px solid rgba($secondary-dark, 0.9);
-          }
-        }
-        span {
-          font-family: var(--font-serif);
-          font-weight: 600;
-          display: block;
-          @include responsive(min, md) {
-            font-size: 1.6rem;
-          }
-          color: $primary-dark;
-        }
-      }
+  // border-top: 1px solid rgba($body-color, 0.2);
+  padding-top: 1.5rem;
+  &__disable {
+    display: none;
+    &.show {
+      display: block;
     }
   }
 }
-
-.amenities {
-  padding: 0 0 2.5rem;
-  @extend %smallTag;
-  @include responsive(min, lg) {
-    padding: 4rem 0;
-    text-align: center;
-  }
-
-  ul {
-    margin-top: 1.5rem;
-    display: grid;
-    grid-auto-flow: column dense;
-    overflow-x: auto;
-    gap: 0.9rem;
-    padding-bottom: 0.5rem;
-    @include responsive(min, sm) {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      overflow-x: inherit;
-      grid-auto-flow: row;
-      gap: 1.2rem;
-    }
-
-    li {
-      border: 1px solid rgba($secondary, 0.5);
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      padding: 0.5rem;
-      font-size: var(--text-xs);
-      white-space: nowrap;
-      @include responsive(min, sm) {
-        white-space: inherit;
-        font-size: var(--text-sm);
-      }
-      border-radius: var(--rounded);
-      svg {
-        font-size: 1.5rem;
-        @include responsive(min, sm) {
-          font-size: 2.5rem;
-        }
-        color: $secondary-dark;
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-    }
-  }
-}
-
-.floor-section {
-  overflow-x: hidden;
-  padding: 2.5rem 0;
-  background-color: $white;
-  p {
-    text-align: justify;
-  }
-  @include responsive(min, lg) {
-    padding: 5rem 0;
-  }
-
-  .master-plan {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    &__inner {
-      padding: 0.5rem;
-      background-color: $white;
-    }
-    figcaption {
-      text-align: center;
-    }
-  }
-  &__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // border: red solid 1px;
-    min-height: 100%;
-  }
-}
-
-.floor-plan {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
-  @extend %smallTag;
+.prices {
+  padding-top: 3rem;
   &__slides {
     @extend %next-prev-decoration;
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-    padding-right: 1px !important;
-  }
-  .swiper-slide {
-    background-color: $white;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    @include responsive(min, sm) {
-      flex-direction: row;
-    }
-    position: relative;
-    border: 3px solid rgba($primary, 0.3);
-    border-radius: 0.5rem;
-    text-align: center;
-    // padding: 1.5rem 1.7rem;
-    &:hover {
-      box-shadow: 0 0 0.3rem 0 rgba($primary, 0.2);
-    }
-    a {
-      // background-color: rgba($primary, 0.1);
-      cursor: zoom-in;
-      flex: 1 1 60%;
-      @include responsive(min, sm) {
-        border-right: 1px solid rgba($primary, 0.3);
-      }
-    }
-    img {
-      position: relative;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-      height: 200px;
-      // padding: 0.9rem;
-      @include responsive(min, sm) {
-        height: 250px;
-      }
-    }
-  }
-
-  &__detail {
-    // border: red solid 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%;
-    padding: 0 1rem 1.5rem;
-    @include responsive(min, sm) {
-      padding: 2rem;
+    .swiper-slide {
+      // flex-grow: 1;
+      border: 4px solid rgba($primary, 0.1);
+      border-radius: 0.5rem;
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem 1.7rem;
     }
   }
   .type {
-    /*  border: 1px solid rgba($primary, 0.4);
+    border: 1px solid rgba($primary, 0.4);
     display: inline-block;
     padding: 0.4rem 0.9rem;
-    border-radius: 100vmax; */
-    // font-weight: var(--font-bold);
+    border-radius: 100vmax;
+    font-weight: var(--font-bold);
   }
   &__price {
-    border-top: 1px solid rgba($primary, 0.2);
-    padding-top: 1.2rem;
     margin-top: 1rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: var(--font-bold);
     line-height: 1.1;
+
     svg {
       font-size: 1rem;
     }
@@ -508,9 +404,6 @@ main {
     margin-top: 1.2rem;
     margin-bottom: 1rem;
     padding-top: 1.2rem;
-    small {
-      display: block;
-    }
     span {
       font-weight: var(--font-bold);
       font-size: 1.2rem;
@@ -522,218 +415,265 @@ main {
   }
 }
 
-.gallery {
-  padding: 2.5rem 0;
-  @include responsive(min, lg) {
-    padding: 5rem 0 0;
-    text-align: center;
+.amenities {
+  padding-top: var(--common-space-xl);
+  @include responsive(min, md) {
+    padding-top: var(--common-space-xl);
+  }
+  ul {
+    display: flex;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    li {
+      flex: 0 0 100%;
+      @include responsive(min, md) {
+        flex: 0 0 calc(50% - 0.5rem);
+      }
+      // border: red solid 1px;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      display: flex;
+      column-gap: 0.5rem;
+      svg {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 
-.gallery-slides {
-  position: relative;
-  // width: 400%;
-  display: grid;
-  grid-template-columns: none;
-  grid-template-rows: none;
-  @include responsive(min, lg) {
-    grid-template-columns: repeat(4, 1fr);
+.localities {
+  padding-top: var(--common-space-xl);
+  &__images {
+    border: rgba($primary, 0.2) solid 4px;
+    margin-bottom: 1rem;
   }
-  // grid-template-rows: auto;
-  gap: 0.5rem;
-  img {
-    min-height: 100%;
-    object-fit: cover;
-    object-position: center;
+  .nav-tabs {
+    flex-wrap: nowrap;
+    overflow: auto hidden;
+    column-gap: 2px;
+    border-bottom: none;
   }
-  .img-slide {
-    @include responsive(min, sm) {
-      &:nth-of-type(1) {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 2;
+  .nav-link {
+    background-color: lighten($body-color, 80);
+    border-radius: 0;
+    text-align: center;
+    font-weight: var(--font-medium);
+    font-size: var(--font-smaller);
+    color: lighten($body-color, 20);
+    span {
+      display: none;
+      @include responsive(min, md) {
+        display: block;
       }
-
-      &:nth-of-type(3) {
-        grid-column: 3 / span 2;
-        grid-row: 1 / span 2;
-      }
-
-      &:nth-of-type(5) {
-        grid-column: 1 / span 2;
-        grid-row: 3 / span 1;
-        img {
-          height: 100px;
+    }
+    &.active {
+      background-color: rgba($primary, 0.15);
+      border: none;
+      border-top: 2px solid lighten($primary, 15);
+      color: $primary;
+    }
+    svg {
+      display: block;
+      margin: 0 auto 0.2rem;
+      font-size: 1.5rem;
+    }
+  }
+  .tab-pane {
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+    background-color: rgba($primary, 0.05);
+    ol {
+      li {
+        font-size: var(--font-smaller);
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba($primary, 0.3);
+        }
+        strong {
+          font-weight: var(--font-bold);
+          flex: 0 0 80px;
+          text-align: right;
         }
       }
     }
   }
 }
-.localities {
+
+.ebrochure {
   position: relative;
-  padding: 2.5rem 0;
-  // border-top: lighten($secondary, 10) solid 1px;
-  // border-bottom: lighten($secondary, 10) solid 1px;
-
-  @include responsive(min, lg) {
-    padding: 5rem 0 0;
-    // text-align: center;
+  margin-top: 2rem;
+  border: rgba($primary, 0.2) solid 1px;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  @include responsive(min, sm) {
+    gap: 1.5rem;
+    flex-direction: row;
   }
-
-  &__accordion {
-    margin-top: 1rem;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // min-height: 100%;
-    @include responsive(min, lg) {
-      margin-top: -2rem;
-      padding-right: 3rem;
-      padding-left: 3rem;
+  background-color: rgba($primary, 0.1);
+  align-items: center;
+  &__description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    strong {
+      margin-top: 0.5rem;
+      display: block;
     }
   }
+  .pdf {
+    font-size: 9rem;
+    svg {
+      color: rgba($primary, 0.3);
+    }
+  }
+}
 
-  /* @extend %smallTag;
-  &__images {
+.any-question {
+  padding-top: 1rem;
+  &__description {
+    @extend .ebrochure;
+    .pdf {
+      font-size: 7rem;
+      flex: 1 1 30%;
+      // border: red solid 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.floor-plan {
+  padding-top: 3rem;
+  // border: red solid 1px;
+  &__slides {
+    @extend %next-prev-decoration;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-right: 1px !important;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    @include responsive(min, sm) {
+      flex-direction: row;
+    }
+    position: relative;
+    border: 4px solid rgba($primary, 0.1);
+    border-radius: 0.5rem;
+    text-align: center;
+    // padding: 1.5rem 1.7rem;
+    &:hover {
+      box-shadow: 0 0 0.3rem 0 rgba($primary, 0.2);
+    }
+    img {
+      position: relative;
+      z-index: 1050;
+      height: 300px;
+      width: 100%;
+      padding: 0.9rem;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  a {
+    // background-color: rgba($primary, 0.1);
+    flex: 0 0 330px;
+    cursor: zoom-in;
+  }
+  &__detail {
+    flex: 1;
+    padding: 0 1rem 1.5rem;
+    @include responsive(min, sm) {
+      padding: 1rem;
+    }
+  }
+  .type {
+    border: 1px solid rgba($primary, 0.4);
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 100vmax;
+    font-weight: var(--font-bold);
+  }
+  &__price {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+
+    svg {
+      font-size: 1rem;
+    }
+  }
+  .sizes {
+    border-top: 1px solid rgba($primary, 0.2);
+    margin-top: 1.2rem;
     margin-bottom: 1rem;
-  } */
+    padding-top: 1.2rem;
+    span {
+      font-weight: var(--font-bold);
+      font-size: 1.2rem;
+    }
+  }
+  .btn {
+    // flex-grow: 1;
+    width: 100%;
+  }
 }
 
 .faq {
-  padding: 2.5rem 0 1.5rem;
-  @include responsive(min, lg) {
-    padding: 5rem 0;
+  padding-top: var(--common-space-xl);
+  .accordion {
+    --bs-accordion-bg: none;
+    margin-bottom: 3rem;
+    // border: red solid 1px;
   }
-  background-color: $white;
-}
-.accordion {
-  position: relative;
-  // @extend %accordion_sample;
-  &-item {
-    border: none;
-    border-radius: var(--rounded);
-    background-color: rgba($secondary, 0.4);
-    position: relative;
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-  }
-  &-focus {
-    border: $primary solid 2px;
-    position: absolute;
-    inset: 0.5rem;
-    border-radius: var(--rounded);
-    z-index: 1;
-    width: calc(100% - 1rem);
-    min-height: calc(100% - 1rem);
-    background-color: $white;
-  }
-  &-body,
-  &-button {
-    position: relative;
-    z-index: 2;
-  }
-  &-body {
-    font-size: 1rem;
-    padding-bottom: 1.5rem;
-  }
-  &-button {
-    display: flex;
-    gap: 0.7rem;
-    border: none;
-    background-color: $white;
-    font-size: 1.2rem;
-    &:not(.show) {
-      background-color: rgba($secondary, 0.4);
-      // border: green solid 1px;
-    }
-    &:not(.collapsed) {
-      padding: 1.6rem 1.6rem 0;
-      box-shadow: none;
-    }
-    &:not(.collapse) {
-      background-color: transparent;
-    }
+
+  .accordion-button {
+    padding: var(--bs-accordion-btn-padding-y) 0;
+    font-size: 0.9rem;
+    font-weight: 600;
     &:focus {
       box-shadow: none;
     }
-    svg {
-      font-size: 1.4rem;
+    &:not(.collapsed) {
+      // color: inherit;
+      background-color: transparent;
+      box-shadow: none;
     }
   }
-  ol {
-    padding: 0 0.3rem;
-  }
-  li {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    &:not(:last-child) {
-      border-bottom: 1px solid rgba($secondary, 0.5);
-    }
-  }
-}
 
-.about {
-  position: relative;
-  padding: 2.5rem 0 1.5rem;
-  p {
-    text-align: justify;
-  }
-  @include responsive(min, lg) {
-    padding: 5rem 0;
-  }
-  .awards {
-    border-top: 1px solid rgba($primary, 0.1);
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    &__items {
-      padding-left: 4rem;
-      span {
-        font-weight: var(--font-bold);
-      }
-      svg {
-        display: block;
-        float: left;
-        margin-left: -4rem;
-        font-size: 2rem;
-        margin-top: 0.3rem;
-      }
+  .accordion-item {
+    border: none;
+    border-bottom: solid var(--bs-accordion-border-width) var(--bs-accordion-border-color);
+    &:last-of-type {
+      border-bottom: none;
     }
   }
-  &__bg {
-    position: relative;
-    @include responsive(min, lg) {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
+  .accordion-body {
+    padding: 0 0 var(--bs-accordion-body-padding-y);
+    font-size: 0.9rem;
   }
 }
 
 .form-right {
-  // display: none;
-  border-top: 1px solid rgba($primary, 0.2);
-  padding-top: 2rem;
-  margin-top: 2rem;
-  background-color: $white;
-  position: relative;
-  z-index: 2;
-  .heading {
-    text-align: center;
-  }
+  display: none;
   @include responsive(min, lg) {
-    border-top: none;
     display: block;
+    top: 5rem;
+    margin-bottom: var(--common-space-xl);
+    position: -webkit-sticky;
+    position: sticky;
     padding: 1rem 2rem;
-    background-color: lighten($secondary, 30);
+    background-color: $white;
     border-radius: var(--border-theme);
-    box-shadow: var();
+    // box-shadow: var();
     box-shadow: var(--shadow-theme);
     border: rgba($primary, 0.2) 1px solid;
     .heading {
